@@ -15,7 +15,6 @@ root.render(
     <div class="content-wrapper">
       <App />
     </div>
-
     <Footer />
   </React.StrictMode>
 );
