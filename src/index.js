@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./css/bootstrap.css";
 import "./css/screen.css";
+import "./rs-plugin/css/layers.css"
+import "./rs-plugin/css/navigation.css"
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 

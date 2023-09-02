@@ -256,7 +256,10 @@ function Header() {
               <li className="search-trigger">
                 <i className="icon fa fa-search dismiss"></i>
                 <div className="search-box dismiss">
-                  <form className="search-form dismiss" action="javascript:void(0)">
+                  <form
+                    className="search-form dismiss"
+                    action="javascript:void(0)"
+                  >
                     <div className="input-line dismiss">
                       <input
                         type="text"
