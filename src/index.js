@@ -5,13 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./css/bootstrap.css";
 import "./css/screen.css";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Header />
     <div class="content-wrapper">
       <App />
     </div>

@@ -7,15 +7,14 @@ import WeAreBest from "./components/WeAreBest";
 function App() {
   return (
     <div className="App">
-      <Banner />
-      <div style={{ background: "yellow" }}>
+      <div style={{ background: "yellow", marginTop: "8%" }}>
         <BuildYourDream />
       </div>
-      <div style={{background:'green'}}>
-        <Potpholio/>
+      <div style={{ background: "green" }}>
+        <Potpholio />
       </div>
-      <TeamMember/>
-      <WeAreBest/>
+      <TeamMember />
+      <WeAreBest />
     </div>
   );
 }
