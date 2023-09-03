@@ -6,11 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import "./css/bootstrap.css";
 import "./css/screen.css";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div class="content-wrapper">
+      <Header/>
       <App />
     </div>
     <Footer />
