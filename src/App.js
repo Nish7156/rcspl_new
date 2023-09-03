@@ -1,20 +1,10 @@
 import "./App.css";
-import Banner from "./components/Banner";
-import BuildYourDream from "./components/BuildYourDream";
-import Potpholio from "./components/Potpholio";
-import TeamMember from "./components/TeamMember";
-import WeAreBest from "./components/WeAreBest";
+import KeyPointCard from "./components/Utility/KeyPointCard";
+
 function App() {
   return (
     <div className="App">
-      <div style={{ background: "yellow", marginTop: "8%" }}>
-        <BuildYourDream />
-      </div>
-      <div style={{ background: "green" }}>
-        <Potpholio />
-      </div>
-      <TeamMember />
-      <WeAreBest />
+      <KeyPointCard title={'hiii'} src='ff' desc="feasgsegs" />
     </div>
   );
 }
