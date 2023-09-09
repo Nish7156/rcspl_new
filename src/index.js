@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./css/bootstrap.css";
 import "./css/screen.css";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -15,7 +15,7 @@ root.render(
       <Header/>
       <App />
     </div>
-    {/* <Footer /> */}
+    <Footer />
   </React.StrictMode>
 );
 

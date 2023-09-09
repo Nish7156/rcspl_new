@@ -1,16 +1,16 @@
-import React,{useEffect,useRef,useState} from 'react';
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
-import Slider from 'react-slick';
+import React, { useEffect, useRef, useState } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import Slider from "react-slick";
 
 function SamplePrevArrow(props) {
   const { className, onClick } = props;
-  const prevArrowRef = useRef<HTMLDivElement>(null);
+  const prevArrowRef = useRef < HTMLDivElement > null;
 
   useEffect(() => {
     setTimeout(() => {
-      const prevArrowElement = document.querySelector('.slick-prev');
+      const prevArrowElement = document.querySelector(".slick-prev");
       if (prevArrowElement) {
-        prevArrowElement.classList.add('slick-disable');
+        prevArrowElement.classList.add("slick-disable");
       }
     }, 0);
   }, []);
@@ -22,14 +22,13 @@ function SamplePrevArrow(props) {
   );
 }
 
-
 function SampleNextArrow(props) {
   const { className, onClick } = props;
-  const nextArrowRef = useRef<HTMLDivElement>(null);
+  const nextArrowRef = useRef < HTMLDivElement > null;
   const [isDisabled, setIsDisabled] = useState(false);
   const handleClick = () => {
     setIsDisabled(true);
-    if (typeof onClick === 'function') {
+    if (typeof onClick === "function") {
       onClick();
     }
   };
@@ -37,9 +36,9 @@ function SampleNextArrow(props) {
   useEffect(() => {
     setTimeout(() => {
       if (isDisabled) {
-        const prevArrowElement = document.querySelector('.slick-prev');
+        const prevArrowElement = document.querySelector(".slick-prev");
         if (prevArrowElement) {
-          prevArrowElement.classList.remove('slick-disable');
+          prevArrowElement.classList.remove("slick-disable");
         }
       }
     }, 0);
@@ -64,21 +63,24 @@ function Carousel({
 }) {
   const settings = {
     dots: dots ? dots : false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: slidesToScroll,
     initialSlide: initialSlide,
     arrows: arrow ? arrow : false,
-    nextArrow:  <FaAngleRight />,
-    prevArrow:  <FaAngleLeft />,
+    nextArrow: <FaAngleRight />,
+    prevArrow: <FaAngleLeft />,
+    infinite: true,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1279,
         settings: {
           slidesToShow: mdSlidesToShow,
           slidesToScroll: slidesToScroll,
-          infinite: false,
+          infinite: true,
+          autoplay: true,
           arrows: arrow ? arrow : false,
         },
       },
@@ -105,7 +107,7 @@ function Carousel({
   };
   return (
     <div>
-        <Slider {...settings}>{children}</Slider>
+      <Slider {...settings}>{children}</Slider>
     </div>
   );
 }

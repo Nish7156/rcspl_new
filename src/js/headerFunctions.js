@@ -17,14 +17,8 @@ export function setupHeaderFunctions() {
     htmlcssArrow.addEventListener("click", () => {
       navLinks.classList.toggle("show1");
     });
-  
-    moreArrow.addEventListener("click", () => {
-      navLinks.classList.toggle("show2");
-    });
-  
-    jsArrow.addEventListener("click", () => {
-      navLinks.classList.toggle("show3");
-    });
+
+
   
     return () => {
       menuOpenBtn.removeEventListener("click");
