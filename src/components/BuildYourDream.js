@@ -1,66 +1,72 @@
-import React from 'react'
+import React from 'react';
+import { FaHome, FaLightbulb, FaFileAlt, FaBriefcase } from 'react-icons/fa';
 
 function BuildYourDream() {
-  return (
-    <div>
-        <section className="services-section">
+	const companyData = {
+		name: "Why Choose Realm Consulting Services ?",
+		description: "Your reliable partner in the world of manufacturing projects. With a rich history dating back to 2006, we have been consistently delivering excellence in a one-stop solution for manufacturing projects related services."
+	};
+
+	const services = [
+		{
+			icon: <FaHome style={{ color: 'palegoldenrod' }} />,
+			title: "Expertise",
+			subtitle: "Highly qualified professionals",
+			description: "Our team comprises highly qualified, experienced, and dynamic professionals, including Chartered Accountants, Company Secretaries, Advocates, Lawyers, MBAs, Chartered Engineers, Architects, and Government Approved Valuators. Their expertise ensures customized solutions tailored to your unique needs.",
+		},
+		{
+			icon: <FaFileAlt style={{ color: 'palegoldenrod' }} />,
+			title: "Customized Reports",
+			subtitle: "Tailored reports for your needs",
+			description: "Our expert team provides various tailored reports, including Survey, Analysis, Investigation, and Search Reports. These reports cover technical, legal, financial, marketing, and operational aspects. We also assess project feasibility and viability to give you a clear picture of your project's potential.",
+		},
+		{
+			icon: <FaLightbulb style={{ color: 'palegoldenrod' }} />,
+			title: "Comprehensive Services",
+			subtitle: "Specializing in licenses, approvals, permissions, and more",
+			description: "We specialize in licenses, approvals, permissions, consents, NOCs, subsidies, incentives, and project finance consultancy. Our comprehensive range of services ensures that you have all the support you need for your manufacturing projects.",
+		},
+		{
+			icon: <FaBriefcase style={{ color: 'palegoldenrod' }} />,
+			title: "Client-Centric Approach",
+			subtitle: "Committed to your project's success",
+			description: "We are committed to meeting the diverse needs of our esteemed clients. Your project's success is our top priority, and we work closely with you to achieve your goals.",
+		},
+	];
+
+
+	return (
+		<div>
+			<section className="services-section">
 				<div className="container">
 					<div className="row">
 						<div className="col-md-4 col-sm-12 col-lg-4">
 							<div className="service-box">
-								<span className="subtitle">Our Services</span>
-								<h3 className="title">Build your dream</h3>
-								<p className="description">Praesent odio nulla, egestas in facilisis ac, viverra non dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultric posuere cubilia Curae. Quisque eget leo dui. Phasellus tellus lacus, consectetur non est ac, iaculis tempor leo. Nunc eleifen feugiat pharetra. Donec in mattis ante, ac commodo tortor. Suspendisse at mi non arcu scelerisque ullamcorper et eu se. Cras ut erat est. Nunc nec imperdiet purus, vitae maximus tor. Aliquam ultricies eros sit scelerisque porta ac efficit orci. In aliquam nec odio eu dictum. Sed aliquet gravida sapi.</p>
-								<a href="#" className="btn yellow">More Services</a>
+								<h3 className="title">{companyData.name}</h3>
+								<p className="description">{companyData.description}</p>
 							</div>
 						</div>
-						<div className="col-md-8 col-sm-6 col-lg-4">
-							<div className="service-box-icon">
-								<div className="front">
-									<i className="icon icon-House"></i>
-									<h5 className="title">Construction</h5>
-									<span className="subtitle">Fresh minds with creative ideas</span>
-								</div>
-								
-								<p className="description">Steady construction requires solid and robust foundation as well as prosperous relations are built only on faith and mutual respect. We pay attention to all small details for best results.</p>
-							</div>
+						{services.map((service, index) => (
+							<div key={index} className="col-md-8 col-sm-6 col-lg-4">
+								<div className="service-box-icon ">
+									<div className="front ">
+									<i className="icon ">
+										{service.icon}
+									</i>
+											<h5 className="title">{service.title}</h5>
 
-							<div className="service-box-icon">
-								<div className="front">
-									<i className="icon icon-Lightbulb"></i>
-									<h5 className="title">Special Projects</h5>
-									<span className="subtitle">Fresh minds with creative ideas</span>
+										<span className="subtitle">{service.subtitle}</span>
+									</div>
+									<p className="description">{service.description}</p>
 								</div>
-								
-								<p className="description">Steady construction requires solid and robust foundation as well as prosperous relations are built only on faith and mutual respect. We pay attention to all small details for best results.</p>
 							</div>
-						</div>
-						<div className="col-md-8 col-sm-6 col-lg-4">
-							<div className="service-box-icon">
-								<div className="front">
-									<i className="icon icon-Presentation"></i>
-									<h5 className="title">Interior design</h5>
-									<span className="subtitle">A new touch is always welcome</span>
-								</div>
-								
-								<p className="description">Steady construction requires solid and robust foundation as well as prosperous relations are built only on faith and mutual respect. We pay attention to all small details for best results.</p>
-							</div>
-
-							<div className="service-box-icon">
-								<div className="front">
-									<i className="icon icon-Briefcase"></i>
-									<h5 className="title">Consulting</h5>
-									<span className="subtitle">Fresh minds with creative ideas</span>
-								</div>
-								
-								<p className="description">Steady construction requires solid and robust foundation as well as prosperous relations are built only on faith and mutual respect. We pay attention to all small details for best results.</p>
-							</div>
-						</div>
+						))}
 					</div>
 				</div>
 			</section>
-    </div>
-  )
+		</div>
+	);
 }
 
-export default BuildYourDream
+export default BuildYourDream;
+
