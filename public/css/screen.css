@@ -44,7 +44,7 @@ Project: Bricks
 */
 
 @import url(//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
-/* @font-face {
+@font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?6rglky");
   src: url("../fonts/icomoon.eot?6rglky#iefix") format("embedded-opentype"),
@@ -53,7 +53,7 @@ Project: Bricks
     url("../fonts/icomoon.svg?6rglky#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
-} */
+}
 /* ----------------- Page Elements & Classes ----------------- */
 * {
   margin: 0;
@@ -2386,7 +2386,7 @@ ul.page-numbers li .current {
 }
 
 .blog-section {
-  /* background: url(../img/blog-section-bg.jpg); */
+  background: url(../img/blog-section-bg.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   padding: 0 0 20px;
@@ -3073,7 +3073,7 @@ ul.page-numbers li .current {
 /* ----------------- Call To Action ----------------- */
 .call-to-action {
   position: relative;
-  /* background: url(../img/call-to-action-bg.jpg) top center; */
+  background: url(../img/call-to-action-bg.jpg) top center;
   background-size: cover;
   padding: 70px 0 67px;
 }
@@ -3329,7 +3329,7 @@ ul.page-numbers li .current {
 /* ---------------- Socials Section ------------------ */
 .socials-section {
   padding: 97px 0 13px;
-  /* background: url(../img/socials-bg.jpg); */
+  background: url(../img/socials-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -3408,7 +3408,7 @@ ul.page-numbers li .current {
 }
 
 .features-section.bg {
-  /* background: url(../img/features-sections-bg.jpg); */
+  background: url(../img/features-sections-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -3815,7 +3815,7 @@ ul.page-numbers li .current {
 
 /* ----------------- Pricing Tables ----------------- */
 .pricing-tables {
-  /* background: url(../img/pricing-tables-bg.jpg); */
+  background: url(../img/pricing-tables-bg.jpg);
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -3928,7 +3928,7 @@ ul.page-numbers li .current {
 /* ----------------- Statistics ----------------- */
 .stats-container {
   padding: 50px 0 48px;
-  /* background: url(../img/stats-container-bg.jpg); */
+  background: url(../img/stats-container-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -4836,7 +4836,7 @@ ul.page-numbers.shop:after {
 
 /* ---------------- Error 404 Section ------------------ */
 .error-404 {
-  /* background: url(../img/404pagebg.jpg) top center; */
+  background: url(../img/404pagebg.jpg) top center;
   background-size: cover;
   background-attachment: fixed;
   padding: 410px 0 380px;
@@ -4868,7 +4868,7 @@ ul.page-numbers.shop:after {
 
 /* ---------------- Coming Soon Section ------------------ */
 .coming-soon-section {
-  background: url('../img/close-menu.png');
+  background: url(../img/coming-soon-bg.jpg);
   background-size: cover;
   background-position: 50% 50%;
   text-align: center;
@@ -6042,7 +6042,7 @@ ul.page-numbers.shop:after {
 }
 
 .mfp-container {
-  /* cursor: url(../img/close-popup.png), default; */
+  cursor: url(../img/close-popup.png), default;
   text-align: center;
   position: absolute;
   width: 100%;

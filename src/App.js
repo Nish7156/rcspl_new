@@ -1,12 +1,12 @@
-import "./App.css";
-import KeyPointCard from "./components/Utility/KeyPointCard";
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      {/* <KeyPointCard title={'hiii'} src='ff' desc="feasgsegs" /> */}
-      RCSL
+    <>
+    <div style={{backgroundColor:"red"}}>
+      Nishnat
     </div>
+    </>
   );
 }
 

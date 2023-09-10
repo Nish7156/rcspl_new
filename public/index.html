@@ -1,30 +1,921 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Bricks</title>
+    <meta name="description" content="Here goes description" />
+    <meta name="author" content="author name" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="rs-plugin/css/navigation.css">		
+</head>
+<body>
 
-    <title>RCSPL</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+	<!-- Page Wrapper -->
+	<div id="page">
+		
+		<!-- Header -->
+		<header class="header-v2">
+			<div class="top-header">
+                <div class="container-fluid">
+                    <ul class="contacts">
+                        <li><i class="fa fa-phone"></i>+1 (800) 456 37 96</li>
+                        <li><a href="mailto:info@company.com"><i class="fa fa-envelope"></i>info@company.com</a></li>
+                    </ul>
+                
+                	<ul class="socials">
+                		<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                		<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                		<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                		<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                	</ul>
+                </div>
+            </div>
+
+            <div class="bottom-header">
+            	<div class="container-fluid">
+            		<span class="mobile-navigation-toggle hidden-md hidden-lg">
+						<span class="menui top-menu"></span>
+						<span class="menui mid-menu"></span>
+						<span class="menui bottom-menu"></span>
+					</span>
+
+            		<div class="logo">
+            			<a href="index.html">BRICKS<span>.</span></a>
+            		</div>
+				   	
+				   	<nav class="main-nav">
+					    <ul class="menu">
+					        <li class="menu-item menu-item-has-children current-menu-parent">
+					            <a href="#">Home</a>
+					             <ul class="sub-menu">
+					                <li class="menu-item current-menu-item">
+					                    <a href="index.html">Home 1</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="index-2.html">Home 2</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="index-3.html">Home 3</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="index-4.html">Home 4</a>
+					                </li>
+					            </ul>  
+					        </li>
+					        <li class="menu-item">
+					            <a href="#">Pages</a>
+					            <ul class="sub-menu">
+					                <li class="menu-item">
+					                    <a href="about.html">About</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="typography.html">Typography</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="gallery.html">Gallery</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="coming-soon.html">Coming Soon</a>
+					                </li>
+					                 <li class="menu-item">
+					                    <a href="services.html">Services</a>
+					                </li>
+					                 <li class="menu-item">
+					                    <a href="showreel.html">Showreel</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="404.html">404</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="faq.html">FAQ</a>
+					                </li>
+					            </ul>  
+					        </li>
+							<li class="menu-item menu-item-has-children">
+							    <a href="#">Portfolio</a>
+							    <ul class="sub-menu">
+							        <li class="menu-item">
+							             <a href="portfolio-1col.html">1 Column</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="portfolio-square.html">Grid</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="portfolio.html">Grid 2</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="portfolio-masonry.html">Masonry</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="portfolio-wall.html">Wall</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="single-portfolio.html">Single Portfolio</a>
+							        </li>
+							    </ul>
+							</li>
+							<li class="menu-item menu-item-has-children">
+							    <a href="#">Journal</a>
+							    <ul class="sub-menu">
+							        <li class="menu-item">
+							            <a href="blog.html">Journal Listing</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="single-gallery.html">Gallery Blog Post</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="single-post.html">Quote Blog Post</a>
+							        </li>
+							    </ul>
+							</li>
+					        <li class="menu-item menu-item-has-children">
+					            <a href="#">Shop</a>
+					            <ul class="sub-menu">
+					                <li class="menu-item">
+					                    <a href="shop.html">All Products</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="single-product.html">Single Product</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="cart.html">Cart</a>
+					                </li>
+					            </ul>
+					        </li>
+					        <li class="menu-item menu-item-has-children">
+					            <a href="#">Contact</a>
+					            <ul class="sub-menu">
+					                <li class="menu-item">
+					                    <a href="contact.html">With Sidebar</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="contact-2.html">Without Sidebar</a>
+					                </li>
+					            </ul>
+					        </li>
+					    </ul>
+					</nav>
+
+			   		<ul class="actions">
+	                    <li class="cart-btn">
+	                        <a href="cart.html"><i class="fa fa-shopping-cart"></i>$<span class="cart-btn-price">80.00</span> (<span class="cart-btn-count">2</span> items)</a>
+	                        <div class="cart-items">
+	                        	<div class="cart">
+									<ul>
+										<li class="cart-item">
+											<a href="#" class="remove-from-cart"><i class="icon-deletepassive"></i></a>
+											<a class="cover" href="single-product.html">
+												<img src="img/cart-thumbnail-2.jpg" alt="cart cover">
+											</a>
+											<p class="title">
+												<a href="single-product.html">Impact Drill</a>
+											</p>
+											<span class="price"><span class="item-price-number">1 x $1,190</span></span>
+										</li>
+
+										<li class="cart-item">
+											<a href="#" class="remove-from-cart"><i class="icon-deletepassive"></i></a>
+											<a class="cover" href="single-product.html">
+												<img src="img/cart-thumbnail-1.jpg" alt="cart cover">
+											</a>
+											<p class="title">
+												<a href="single-product.html">Temporibus Autem Quibus</a>
+											</p>
+											<span class="price"><span class="item-price-number">1 x $1,190</span></span>
+										</li>
+									</ul>
+
+									<div class="sub-total">
+										Subtotal: <span>$1,190</span>
+									</div>
+
+									<a href="cart.html" class="btn view-cart yellow">view cart</a>
+									<a href="#" class="btn white checkout">checkout</a>
+								</div>
+							</div>
+	                    </li>
+	                    <li class="custom-select">
+							<span class="default"><i class="fa fa-globe"></i><span class="content">Eng</span></span>
+							<ul class="select-options dismiss">
+								<li>ENG</li>
+								<li>RUS</li>
+								<li>ESP</li>
+								<li>FRA</li>
+							</ul>
+	                    </li>
+	                    <li class="search-trigger">
+					   		<i class="icon fa fa-search dismiss"></i>
+					   		<div class="search-box dismiss">
+					   			<form class="search-form dismiss" action="javascript:void(0)">
+					   				<div class="input-line dismiss">
+						   				<input type="text" class="search-input dismiss" placeholder="Type and Hit Enter">
+						   			</div>
+					   			</form>
+					   		</div>
+					   	</li>
+	                </ul>
+            	</div>
+            </div>
+		</header>
+
+		<!-- Main Content -->
+		<div class="content-wrapper">
+			<section class="hero-section">
+				<h2 class="hidden">Slider Section</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="rev_slider_wrapper">
+								<div class="fullscreen_slider rev_slider">
+									<ul>		
+										<li data-transition="fade">			
+											<img src="img/slider-background-1.jpg" alt="slide1" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+											<div class="tp-caption WhiteTtl tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="-50" 
+												data-whitespace="nowrap"
+												data-transform_idle="o:1;"
+	                                            data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+	                                            data-transform_out="opacity:0;s:500;s:500;"
+	                                            data-start="1300"
+												data-responsive_offset="on">Construct your future
+											</div>
+											
+											<div class="tp-caption WhiteTtlp tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="30" 
+												data-whitespace="pre"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+												data-transform_out="opacity:0;s:500;s:500;"
+												data-start="1700" 
+												data-responsive_offset="on">As the general contructor, we first create the highest level of trust and integrity with our
+	                clients. We value our role in the success of your project.
+											</div>
+
+											<div class="tp-caption tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="92"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                                data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                                data-start="2000"
+												data-responsive_offset="on" 
+												><a class="btn yellow medium" href="#">view more</a>
+											</div>
+											
+										</li>
+										<li data-transition="fade">			
+											<img src="img/slider-background-2.jpg" alt="slide1" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+											<div class="tp-caption WhiteTtl tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="-50" 
+												data-whitespace="nowrap"
+												data-transform_idle="o:1;"
+	                                            data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+	                                            data-transform_out="opacity:0;s:500;s:500;"
+	                                            data-start="1300"
+												data-responsive_offset="on">Construct your future
+											</div>
+											
+											<div class="tp-caption WhiteTtlp tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="30" 
+												data-whitespace="pre"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+												data-transform_out="opacity:0;s:500;s:500;"
+												data-start="1700" 
+												data-responsive_offset="on">As the general contructor, we first create the highest level of trust and integrity with our
+	                clients. We value our role in the success of your project.
+											</div>
+
+											<div class="tp-caption tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="92"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                                data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                                data-start="2000"
+												data-responsive_offset="on" 
+												><a class="btn yellow medium" href="#">view more</a>
+											</div>
+											
+										</li>
+										<li data-transition="fade">			
+											<img src="img/slider-background-3.jpg" alt="slide1" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+											<div class="tp-caption WhiteTtl tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="-50" 
+												data-whitespace="nowrap"
+												data-transform_idle="o:1;"
+	                                            data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+	                                            data-transform_out="opacity:0;s:500;s:500;"
+	                                            data-start="1300"
+												data-responsive_offset="on">Construct your future
+											</div>
+											
+											<div class="tp-caption WhiteTtlp tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="30" 
+												data-whitespace="pre"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+												data-transform_out="opacity:0;s:500;s:500;"
+												data-start="1700" 
+												data-responsive_offset="on">As the general contructor, we first create the highest level of trust and integrity with our
+	                clients. We value our role in the success of your project.
+											</div>
+
+											<div class="tp-caption tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="92"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                                data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                                data-start="2000"
+												data-responsive_offset="on" 
+												><a class="btn yellow medium" href="#">view more</a>
+											</div>
+											
+										</li>
+									</ul>
+
+									<span class="scroll">
+										<i class="icon-Down"></i>
+									</span>				
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="features-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="feature-md">
+								<img src="img/feature-img-1.jpg" alt="feature img">
+								<h5>Modern technologies</h5>
+								<p>Maecenas lorem elit, sagittis quis mi non, metus. Vestibulum fringilla molestie leo, et ornare diam. Aliquam eget turpis viverra, tincidunt metus a, commodo.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="feature-md">
+								<img src="img/feature-img-2.jpg" alt="feature img">
+								<h5>Experienced team</h5>
+								<p>Praesent porta finibus ultricies. In sollicitudin elementum malesuada. Etiam interdum accumsan hendrerit. Aenean finibus vestibulum lectus, nec feugiat sem congue non.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="feature-md">
+								<img src="img/feature-img-3.jpg" alt="feature img">
+								<h5>best materials</h5>
+								<p>Sed dapibus, mi dignissim posuere faucibus, risus turpis ultr turpis, eu semper metus tortor vulputate erat. Phasellus fini dictum mi, eget mollis turpis tincidunt vitae ut cursus, arcu.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="features-section v2">
+				<div class="container-fluid">
+					<div class="row bg-alfa pos-relative">
+						<div class="col-md-6 no-padding pos-static">
+							<div class="row-bg">
+								<img src="img/features-section-bg.jpg" alt="features bg">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="section-header">
+								<h5 class="subtitle">Our Skills</h5>
+								<h2>We are the best in</h2>
+								<span><i></i></span>
+								<p>Building skyscrapers is like building the relationships. Steady construction requires solid and robust foundation as well as prosperous relations are built only on faith and mutual respect. We pay attention to all small details for best results.</p>
+							</div>
+							
+							<div class="row content">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="feature-line">
+										<img src="img/feature-line-1.png" alt="features img">
+										<h6>House construction</h6>
+										<p>Aenean vel purus non lorem malesuada ultricies. Phasellus nibh odio, facilisis nec turpis ut, elementum scelerisque arcu qui dolorem ipsum.</p>
+									</div>
+									<div class="feature-line">
+										<img src="img/feature-line-2.png" alt="features img">
+										<h6>Scale modelling</h6>
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+									</div>
+									<div class="feature-line">
+										<img src="img/feature-line-3.png" alt="features img">
+										<h6>interior solutions</h6>
+										<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptate.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonials">
+				<div class="container">
+					<div class="section-header white">
+						<h5 class="subtitle">Testimonials</h5>
+						<h2>What people say</h2>
+						<span><i></i></span>
+						<p>Cras finibus non magna sed varius. Fusce risus eros, dapibus vitae dignissim vel, consequat et dolor. Proin maximus posuere felis a tincidunt. Etiam sit amet ligula eget libero suscipit semper eget ornare magna. Phasellus non est ligula. Nulla auctor neque non tortor.</p>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="testimonial">
+								<div class="top">
+									<img class="avatar" src="img/testimonial-1.png" alt="testimonial">
+									<h6 class="name">Jeremy Brewer</h6>
+									<span class="position">Lead Designer</span>
+								</div>
+
+								<p class="message">«Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.»</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="testimonial">
+								<div class="top">
+									<img class="avatar" src="img/testimonial-2.png" alt="testimonial">
+									<h6 class="name">Olivia Arnold</h6>
+									<span class="position">Art Director</span>
+								</div>
+								
+								<p class="message">«Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.»</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="testimonial">
+								<div class="top">
+									<img class="avatar" src="img/testimonial-3.png" alt="testimonial">
+									<h6 class="name">Justin Ferguson</h6>
+									<span class="position">Creative Director</span>
+								</div>
+								
+								<p class="message">«At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupi.»</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="testimonial">
+								<div class="top">
+									<img class="avatar" src="img/testimonial-4.png" alt="testimonial">
+									<h6 class="name">Rachel Williamson</h6>
+									<span class="position">Senior UX Architect</span>
+								</div>
+								
+								<p class="message">«Cras nec libero sed dui interdum sagittis. Integer eu ex matti venenatis tellus nec, interdum magna. Nam scelerisque nisi eu nunc sodales ultrices. Duis sed libero nisl. Fusce laoree.»</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="testimonial">
+								<div class="top">
+									<img class="avatar" src="img/testimonial-5.png" alt="testimonial">
+									<h6 class="name">Harry Schneider</h6>
+									<span class="position">Brand Strategist</span>
+								</div>
+								
+								<p class="message">«In vestibulum nisl tellus, nec ultrices nibh interdum ameon. Vestibulum facilisis tellus lorem, id ornare diam accumsan et. Aliquam enim nisl, volutpat nec elit quis, ultricies fringilla.»</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="testimonial">
+								<div class="top">
+									<img class="avatar" src="img/testimonial-6.png" alt="testimonial">
+									<h6 class="name">Kimberly Andrews</h6>
+									<span class="position">Development Manager</span>
+								</div>
+								
+								<p class="message">«Donec quis libero ut neque auctor scelerisque. Mauris venen diam et rhoncus varius, nunc diam dignissim mi, eget luctus sem ligula in libero. Maecenas semper imperdiet leo id blan.»</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="clients-section">
+				<div class="container-fluid">
+					<div class="row bg-alfa pos-relative">
+						<div class="col-md-6">
+							<div class="section-header">
+								<h5 class="subtitle">Our Clients</h5>
+								<h2>They trust in us</h2>
+								<span><i></i></span>
+								<p>Cras finibus non magna sed varius. Fusce risus eros, dapibus vitae dignissim vel, consequat et dolor. Proin maximus posuere felis a tincidunt. Etiam sit amet ligula eget libero suscipit semper eget ornare magna. Phasellus non est ligula. Nulla auctor neque non tortor.</p>
+							</div>
+							
+							<div class="row content">
+								<div class="col-md-10 col-md-offset-1">
+									<div class="clients-row">
+										<div class="row">
+											<div class="col-xs-4">
+												<a href="#"><img src="img/partner-logo-1.png" alt="partner logo"></a>
+											</div>
+											<div class="col-xs-4">
+												<a href="#"><img src="img/partner-logo-2.png" alt="partner logo"></a>
+											</div>
+											<div class="col-xs-4">
+												<a href="#"><img src="img/partner-logo-3.png" alt="partner logo"></a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-4">
+												<a href="#"><img src="img/partner-logo-4.png" alt="partner logo"></a>
+											</div>
+											<div class="col-xs-4">
+												<a href="#"><img src="img/partner-logo-5.png" alt="partner logo"></a>
+											</div>
+											<div class="col-xs-4">
+												<a href="#"><img src="img/partner-logo-6.png" alt="partner logo"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 no-padding pos-static">
+							<div class="row-bg">
+								<img src="img/clients-section.jpg" alt="clients bg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="team-members-section">
+				<div class="container">
+					<div class="section-header white">
+						<h5 class="subtitle">Our Team</h5>
+						<h2>Big Community of People</h2>
+						<span><i></i></span>
+						<p>Cras finibus non magna sed varius. Fusce risus eros, dapibus vitae dignissim vel, consequat et dolor. Proin maximus posuere felis a tincidunt. Etiam sit amet ligula eget libero suscipit semper eget ornare magna. Phasellus non est ligula. Nulla auctor neque non tortor.</p>
+					</div>
+					
+					<div class="slick-carousel team-members" data-speed="600" data-arrows="false" data-dots="true" data-infinite="false" data-items-desktop="4">
+						<div class="row carousel-items">
+							<div class="col-md-3 carousel-item">
+								<div class="team-member">
+									<h6 class="name">Jason Lawrence</h6>
+									<span class="position">Art Director</span>
+									<img class="avatar" src="img/team-member-1.png" alt="team-member">
+									<p class="description">Etiam id laoreet libero. Sed suscipit vulputate augue sed laore. Proin eget pretium magna. </p>
+									<ul class="socials clean-list">
+										<li><a href="#"><i class="fa fa-facebook-square facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest-square pinterest"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter-square twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus-square google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 carousel-item">
+								<div class="team-member">
+									<h6 class="name">KATHIE EVANS</h6>
+									<span class="position">Lead Designer</span>
+									<img class="avatar" src="img/team-member-2.png" alt="team-member">
+									<p class="description">Nullam erat ipsum, tincidunt id luctus eu, rhoncus tincidunt orci. Sed quis arcu elit lobortis fringi.</p>
+									<ul class="socials clean-list">
+										<li><a href="#"><i class="fa fa-facebook-square facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest-square pinterest"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter-square twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus-square google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 carousel-item">
+								<div class="team-member">
+									<h6 class="name">Scott Burton</h6>
+									<span class="position">Creative Director</span>
+									<img class="avatar" src="img/team-member-3.png" alt="team-member">
+									<p class="description">Pellentesque ullamcorper dapibus dapibus. Cras vitae dignissim augue. Quisque dignissim lectus.</p>
+									<ul class="socials clean-list">
+										<li><a href="#"><i class="fa fa-facebook-square facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest-square pinterest"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter-square twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus-square google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 carousel-item">
+								<div class="team-member">
+									<h6 class="name">Roger Patel</h6>
+									<span class="position">Senior UX Architect</span>
+									<img class="avatar" src="img/team-member-4.png" alt="team-member">
+									<p class="description">Vivamus commodo faucibus magna nec egestas. Nam pretium commodo felis quis lacinia.</p>
+									<ul class="socials clean-list">
+										<li><a href="#"><i class="fa fa-facebook-square facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest-square pinterest"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter-square twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus-square google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 carousel-item">
+								<div class="team-member">
+									<h6 class="name">Jason Lawrence</h6>
+									<span class="position">Art Director</span>
+									<img class="avatar" src="img/team-member-1.png" alt="team-member">
+									<p class="description">Etiam id laoreet libero. Sed suscipit vulputate augue sed laore. Proin eget pretium magna. </p>
+									<ul class="socials clean-list">
+										<li><a href="#"><i class="fa fa-facebook-square facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest-square pinterest"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter-square twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus-square google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
+
+			<section class="services-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-12 col-lg-4">
+							<div class="service-box">
+								<span class="subtitle">Our Services</span>
+								<h3 class="title">Build your dream</h3>
+								<p class="description">Praesent odio nulla, egestas in facilisis ac, viverra non dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultric posuere cubilia Curae. Quisque eget leo dui. Phasellus tellus lacus, consectetur non est ac, iaculis tempor leo. Nunc eleifen feugiat pharetra. Donec in mattis ante, ac commodo tortor. Suspendisse at mi non arcu scelerisque ullamcorper et eu se. Cras ut erat est. Nunc nec imperdiet purus, vitae maximus tor. Aliquam ultricies eros sit scelerisque porta ac efficit orci. In aliquam nec odio eu dictum. Sed aliquet gravida sapi.</p>
+								<a href="#" class="btn yellow">More Services</a>
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-6 col-lg-4">
+							<div class="service-box-icon">
+								<div class="front">
+									<i class="icon icon-House"></i>
+									<h5 class="title">Construction</h5>
+									<span class="subtitle">Fresh minds with creative ideas</span>
+								</div>
+								
+								<p class="description">Steady construction requires solid and robust foundation as well as prosperous relations are built only on faith and mutual respect. We pay attention to all small details for best results.</p>
+							</div>
+
+							<div class="service-box-icon">
+								<div class="front">
+									<i class="icon icon-Lightbulb"></i>
+									<h5 class="title">Special Projects</h5>
+									<span class="subtitle">Fresh minds with creative ideas</span>
+								</div>
+								
+								<p class="description">Steady construction requires solid and robust foundation as well as prosperous relations are built only on faith and mutual respect. We pay attention to all small details for best results.</p>
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-6 col-lg-4">
+							<div class="service-box-icon">
+								<div class="front">
+									<i class="icon icon-Presentation"></i>
+									<h5 class="title">Interior design</h5>
+									<span class="subtitle">A new touch is always welcome</span>
+								</div>
+								
+								<p class="description">Steady construction requires solid and robust foundation as well as prosperous relations are built only on faith and mutual respect. We pay attention to all small details for best results.</p>
+							</div>
+
+							<div class="service-box-icon">
+								<div class="front">
+									<i class="icon icon-Briefcase"></i>
+									<h5 class="title">Consulting</h5>
+									<span class="subtitle">Fresh minds with creative ideas</span>
+								</div>
+								
+								<p class="description">Steady construction requires solid and robust foundation as well as prosperous relations are built only on faith and mutual respect. We pay attention to all small details for best results.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="portfolio-section v1">
+				<div class="container-fluid">
+					<div class="section-header">
+						<h5 class="subtitle">Our Portfolio</h5>
+						<h3>Latest Projects</h3>
+					</div>
+
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="portfolio-box">
+								<div class="cover">
+									<a href="single-portfolio.html">
+										<img src="img/portfolio-box-1.jpg" alt="portfolio project">
+									</a>
+									<h6 class="title">Fullwidth video project</h6>
+									<ul class="categories clean-list">
+										<li><a href="#">Construction</a></li>
+										<li><a href="#">Design</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<div class="portfolio-box">
+								<div class="cover">
+									<a href="single-portfolio.html">
+										<img src="img/portfolio-box-2.jpg" alt="portfolio project">
+									</a>
+									<h6 class="title">Project With slider</h6>
+									<ul class="categories clean-list">
+										<li><a href="#">Construction</a></li>
+										<li><a href="#">Design</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<div class="portfolio-box">
+								<div class="cover">
+									<a href="single-portfolio.html">
+										<img src="img/portfolio-box-3.jpg" alt="portfolio project">
+									</a>
+									<h6 class="title">Fullwidth Project</h6>
+									<ul class="categories clean-list">
+										<li><a href="#">Construction</a></li>
+										<li><a href="#">Design</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<div class="portfolio-box">
+								<div class="cover">
+									<a href="single-portfolio.html">
+										<img src="img/portfolio-box-4.jpg" alt="portfolio project">
+									</a>
+									<h6 class="title">Gallery project</h6>
+									<ul class="categories clean-list">
+										<li><a href="#">Construction</a></li>
+										<li><a href="#">Design</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-header button">
+						<h1>Let's make something great together</h1>
+						<p>Get in touch with us and send some basic info for a quick quote</p>
+						<a href="#" class="btn yellow medium dark-hover">Start a project</a>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="top-footer">
+				<div class="container">
+					<div class="row isotope">
+						<div class="col-md-3 col-sm-6 col-xs-12 isotope-item">
+							<div class="widget widget_contact">
+	                            <h4 class="widget-title">Contact Info</h4>
+	                            <div class="widget-body">
+	                            	<ul class="contact-info clean-list">
+	                            		<li>
+	                            			<span class="title">Address:</span>
+		                            		<p>121 King Street, Melbourne</p>
+		                            		<p>Victoria 3000 Australia</p>
+	                            		</li>
+	                            		<li>
+	                            			<span class="title">Phone:</span>
+		                            		<p>+1 (800) 456 37 96 - Office</p>
+	                            		</li>
+	                            		<li>
+	                            			<span class="title">Email:</span>
+		                            		<p><a href="mailto:email@gt3themes.com">email@gt3themes.com</a></p>
+	                            		</li>
+	                            		<li>
+	                            			<span class="title">Follow Us:</span>
+		                            		<ul class="socials clean-list">
+		                            			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+		                            			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+		                            			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+		                            			<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+		                            			<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+		                            			<li><a href="#"><i class="fa fa-behance-square"></i></a></li>
+		                            			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		                            		</ul>
+	                            		</li>
+	                            	</ul>
+	                            </div>
+	                        </div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 isotope-item">
+							<div class="widget widget_instagram">
+	                            <h4 class="widget-title">Follow Instagram</h4>
+	                            <div class="widget-body">
+	                            	<ul class="instagram-feed clean-list" data-instagram="6" data-instagram-username="paul_garrat"></ul>
+	                            </div>
+	                        </div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 isotope-item">
+							<div class="widget widget_recent_posts">
+	                            <h4 class="widget-title">Recent Posts</h4>
+	                            <div class="widget-body">
+	                            	<ul class="recent-posts clean-list">
+	                            		<li>
+	                            			<h4><a href="#">Standard gallery post</a></h4>
+	                            			<ul class="post-meta">
+												<li>June 09, 2018</li>
+												<li>by <a href="#">Mixuha</a></li>
+												<li><a href="#">3 Comments</a></li>
+	                            			</ul>
+	                            		</li>
+	                            		<li>
+	                            			<h4><a href="#">Post with couple photos inside</a></h4>
+	                            			<ul class="post-meta">
+												<li>June 09, 2018</li>
+												<li>by <a href="#">Mixuha</a></li>
+												<li><a href="#">3 Comments</a></li>
+	                            			</ul>
+	                            		</li>
+	                            		<li>
+	                            			<h4><a href="#">Smart quote post</a></h4>
+	                            			<ul class="post-meta">
+												<li>June 09, 2018</li>
+												<li>by <a href="#">Mixuha</a></li>
+												<li><a href="#">3 Comments</a></li>
+	                            			</ul>
+	                            		</li>
+	                            	</ul>
+	                            </div>
+	                        </div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 isotope-item">
+							<div class="widget widget_subscribe">
+	                            <h4 class="widget-title">Newsletter signup</h4>
+	                            <div class="widget-body">
+	                            	<p>Enter your email address to subscribe and receive notifications of new posts by email. Sed ut perspiciatis unde omnis iste natus.</p>
+	                            	<form class="subscribe-form" action="javascript:void(0)">
+										<input class="input-line" type="text" placeholder="Your Email">
+										<input class="submit-btn" type="submit" value="subscribe">
+	                            	</form>
+	                            </div>
+	                        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom-footer">
+				<div class="container">
+					<p class="alignleft align-left copyright">
+						Copyright © 2020 Bricks. All Rights Reserved.
+					</p>
+
+					<p class="alignright align-right copyright">
+						Premium Construction HTML Template by <a href="http://gt3themes.com">GT3themes.com</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/nouislider.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- rs-plugin extensions -->
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+	<!-- //rs-plugin extensions -->
+	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/isotope.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+</body>
 </html>
