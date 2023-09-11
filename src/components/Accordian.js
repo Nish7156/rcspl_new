@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import keyAreas from '../lib/KeyAreas';
 
-
-
 const Accordion = () => {
     const [activeItem, setActiveItem] = useState(0);
 
@@ -15,7 +13,7 @@ const Accordion = () => {
             <div className="section-head center">
                 <h2 className="aon-title">Our Services</h2>
             </div>
-            <div className="accordion custom-accordion" id="accordionExample">
+            <div className="accordion" id="accordionExample">
                 {keyAreas.map((data, index) => (
                     <div className="accordion-item my-4 p-2 rounded-2 border-top" key={index}>
                         <h2 className="accordion-header" id={`heading${index}`}>
@@ -50,9 +48,6 @@ const Accordion = () => {
                                     <div className="col-md-8">
                                         <div className="post-info d-flex flex-column h-100">
                                             <div>
-                                                {/* <div className="post-text">
-                                                    <h4 className="post-title">{data.title}</h4>
-                                                </div> */}
                                                 <div className="aon-post-text">
                                                     <p>{data.description}</p>
                                                 </div>
@@ -61,7 +56,7 @@ const Accordion = () => {
                                                     {data.keyPoints && data.keyPoints.length > 0 && !data.keyPoints[0].title && (
                                                         <ul className="list-unstyled">
                                                             {data?.keyPoints?.map((key, keyIndex) => (
-                                                                <li className="mx-2 d-flex align-items-start " key={keyIndex}>
+                                                                <li className="mx-2 d-flex align-items-center" key={keyIndex}>
                                                                     <i className="feather-check m-2"></i>
                                                                     <div>
                                                                         {key}
@@ -99,7 +94,3 @@ const Accordion = () => {
 };
 
 export default Accordion;
-
-
-
-

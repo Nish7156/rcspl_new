@@ -1,5 +1,6 @@
 const keyAreas = [
     {
+      "id":"service_1",
       "title": "Comprehensive Project Reports and Credit Facility Procurement",
       "subtitle": "Services Offered",
       "image": "https://via.placeholder.com/300x200",
