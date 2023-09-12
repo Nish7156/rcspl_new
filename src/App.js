@@ -1,22 +1,17 @@
-import './App.css';
-import WhyChooseUs from  "./components/WhyChooseUs"
-import ContactUs from './components/ContactUs';
-import Address from './components/Address';
-import TestiMonials from './components/TestiMonials';
-import Client from './components/Client';
-import Accordion from "./components/Accordian"
+import "./App.css";
 
-import keyAreas from "./lib/KeyAreas"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./components/Home";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
     <>
-      <WhyChooseUs/>
-      <Accordion keyAreas={keyAreas}/>
-      <Address/>
-      <TestiMonials/>
-      <Client/>
-      <ContactUs/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="contact-us" element={<ContactUs />} />
+      </Routes>
     </>
   );
 }
