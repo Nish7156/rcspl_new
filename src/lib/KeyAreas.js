@@ -43,7 +43,6 @@ const keyAreas = [
       "title": "MIDC APPROVALS (PRE & POST ESTABLISHMENT)",
       "image": service3Image,
       "subtitle": "Pre and Post Establishment Approvals in MIDC",
-      "image": "https://via.placeholder.com/300x200",
       "description": "Securing approvals for various aspects of your establishment within the Maharashtra Industrial Development Corporation (MIDC) involves obtaining necessary permits and agreements. Here are the key points in the MIDC approvals process:",
       keyPoints: [
         "Building Plan Approval from SPA and MIDC",
@@ -62,7 +61,6 @@ const keyAreas = [
     { "id":"service_4",
       "title": "NON-AGRICULTURE (NA) CONVERSION  ",
       "subtitle": "Understanding NA Conversion and Expertise Areas",
-      "image": "https://via.placeholder.com/300x200",
       "image": service4Image,
       "description": "Non-Agriculture (NA) Conversion is the process of changing land usage from agricultural to industrial purposes. It involves obtaining critical records such as the 7/12 extract, 8A, and 6D mutation entries spanning the last 50 years from land revenue records. Additionally, securing permissions and NOCs from various authorities like the Local Body, PWD, National Highway, Irrigation, Forest, and Health Department is vital. This process also necessitates the examination of TLR village maps, Gat book maps, and Gat books. Expertise in Scheme Extract 9(3) & 9(4), land acquisition, rehabilitation, and compliance with DC rules is indispensable. Finally, obtaining the Non-Agriculture – Industrial (N.A.) permission/order from SDO/Collector is the culminating step.",
       keyPoints: [

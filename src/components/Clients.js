@@ -1,11 +1,5 @@
-import React from 'react';
-
-// const clientImages = [];
-// for (let i = 1; i <= 25; i++) {
-//   clientImages.push(require(`../lib/images/client/clients${i}.jpg`));
-// }
-
-// Import all client images
+import React from "react";
+import Slider from "react-slick";
 import client1 from "../lib/images/client/clients1.jpg";
 import client2 from "../lib/images/client/clients2.jpg";
 import client3 from "../lib/images/client/clients3.jpg";
@@ -59,26 +53,55 @@ const clientImages = [
   client24,
   client25,
 ];
+const Clients = () => {
+  const settings = {
+    dots: true,
+    speed: 400,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: false,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+          },
+        },
+      ],
+  };
 
-const Client = () => {
   return (
-    <div className="container" id='about'>
-      <div className="section-header">
-        <h5 className="subtitle">Our Clients</h5>
-        <h2>They trust us</h2>
-        <span><i></i></span>
-      </div>
+    <div className="">
+      <div className="container">
+        <div className="section-header">
+          <h5 className="subtitle">Our Clients</h5>
+          <h2>They trust us</h2>
+          <span>
+            <i></i>
+          </span>
+        </div>
 
-      <div className="row clients-list">
-        {clientImages.map((client, index) => (
-          <div className="col-md-2 col-xs-4" key={index}>
-            <a href="#"><img className="aligncenter" src={client} alt={`Client ${index + 1} logo`} /></a>
-          </div>
-        ))}
+        <Slider {...settings}>
+          {clientImages.map((item, index) => (
+            <div className="slider-flex">
+              <img src={item} />
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );
 };
 
-export default Client;
-
+export default Clients;
