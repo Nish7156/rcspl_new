@@ -1,9 +1,21 @@
+import service1Image from "../lib/images/services/services1.jpg";
+import service2Image from "../lib/images/services/services2.jpg";
+import service3Image from "../lib/images/services/services3.jpg";
+import service4Image from "../lib/images/services/services4.jpg";
+import service5Image from "../lib/images/services/services5.jpg";
+import service6Image from "../lib/images/services/services6.jpg";
+import service7Image from "../lib/images/services/services7.jpg";
+import service8Image from "../lib/images/services/services8.jpg";
+import service9Image from "../lib/images/services/services9.jpg";
+import service10Image from "../lib/images/services/services10.jpg";
+import service11Image from "../lib/images/services/services11.jpg";
+
 const keyAreas = [
     {
       "id":"service_1",
-      "title": "Comprehensive Project Reports and Credit Facility Procurement",
+      "title": "PREPARATION PROJECT REPORTS",
       "subtitle": "Services Offered",
-      "image": "https://via.placeholder.com/300x200",
+      "image": service1Image,
       "description": "Our services encompass a range of offerings aimed at supporting your project's success, from detailed project reports to credit facility procurement.",
       keyPoints: [
         "Detailed Project Reports: Crafting detailed reports to showcase your project's potential, aligning it with industry standards for maximum appeal to lenders.",
@@ -15,9 +27,9 @@ const keyAreas = [
     },
     {
       "id":"service_2",
-      "title": "MIDC Plot Allotment",
+      "title": "MIDC PLOT ALLOTMENT",
+      "image": service2Image,
       "subtitle": "MIDC Plot Allotment Types and Authorities",
-      "image": "https://via.placeholder.com/300x200",
       "description": "Securing an MIDC plot allocation, whether through E-Bidding, Direct Allotment, or Priority Category, or for expanding existing units, is facilitated by specific authorities. E-Bidding and Direct Allotments are managed by Regional Officers (RO), Joint Chief Executive Officers (Jt. CEO), and Deputy Chief Executive Officers (Dy. CEO) at MIDC. Priority allotments follow the guidance of the Land Allotment Committee (LAC) under the Joint Chief Executive Officer (Jt. CEO) of MIDC. This structured approach ensures efficient land allocation within the Maharashtra Industrial Development Corporation.",
       keyPoints: [
         "MIDC offers three types of plot allotments: E-Bidding, Direct Allotment, and Priority Category.",
@@ -28,7 +40,8 @@ const keyAreas = [
     },
     {
       "id":"service_3",
-      "title": "MIDC Approvals Process",
+      "title": "MIDC APPROVALS (PRE & POST ESTABLISHMENT)",
+      "image": service3Image,
       "subtitle": "Pre and Post Establishment Approvals in MIDC",
       "image": "https://via.placeholder.com/300x200",
       "description": "Securing approvals for various aspects of your establishment within the Maharashtra Industrial Development Corporation (MIDC) involves obtaining necessary permits and agreements. Here are the key points in the MIDC approvals process:",
@@ -47,9 +60,10 @@ const keyAreas = [
       ],
     },
     { "id":"service_4",
-      "title": "Non-Agriculture (NA) Conversion",
+      "title": "NON-AGRICULTURE (NA) CONVERSION  ",
       "subtitle": "Understanding NA Conversion and Expertise Areas",
       "image": "https://via.placeholder.com/300x200",
+      "image": service4Image,
       "description": "Non-Agriculture (NA) Conversion is the process of changing land usage from agricultural to industrial purposes. It involves obtaining critical records such as the 7/12 extract, 8A, and 6D mutation entries spanning the last 50 years from land revenue records. Additionally, securing permissions and NOCs from various authorities like the Local Body, PWD, National Highway, Irrigation, Forest, and Health Department is vital. This process also necessitates the examination of TLR village maps, Gat book maps, and Gat books. Expertise in Scheme Extract 9(3) & 9(4), land acquisition, rehabilitation, and compliance with DC rules is indispensable. Finally, obtaining the Non-Agriculture – Industrial (N.A.) permission/order from SDO/Collector is the culminating step.",
       keyPoints: [
         "NA Conversion transforms agricultural land for industrial use.",
@@ -62,9 +76,9 @@ const keyAreas = [
     },
     {
       "id":"service_5",
-      "title": "Integrated Logistic Parks (ILP) in Maharashtra",
+      "title": " INTEGRATED LOGISTIC PARK (ILP)",
       "subtitle": "Maharashtra's Logistic Park Policy - 2018",
-      "image": "https://via.placeholder.com/300x200",
+      "image": service5Image,
       "description": "Integrated Logistic Parks (ILPs) have become a vital component of Maharashtra's logistics landscape, thanks to the progressive Logistic Park Policy of 2018. This policy aims to streamline the establishment and operation of logistics facilities that encompass a wide range of activities, including cargo aggregations, segregation, sorting, grading, distribution, storage, and freight stations. In this context, obtaining a Letter of Intent (LOI) and Industrial Infrastructure Approval (IIA) status is a crucial step for eligible logistic activities. This article explores the key aspects of this process, including interactions with the Maharashtra Industrial Development Corporation (MIDC), which serves as the planning authority.",
       keyPoints: [
         "Under the Maharashtra Logistic Park Policy, eligible logistic activities encompass a broad spectrum of services crucial to the efficient movement of goods.",
@@ -75,9 +89,9 @@ const keyAreas = [
     },
     {
       "id":"service_6",
-      "title": "Incentives for Developing Integrated Industrial Areas",
-      "subtitle": "Unlocking Opportunities in 2018",
-      "image": "https://via.placeholder.com/300x200",
+      "title":"INTEGRATED INDUSTRIAL AREA (IIA)",
+      "subtitle": "Incentives for Developing Integrated Industrial Areas",
+      "image": service6Image,
       "description": "In 2018, the government introduced incentives to promote the development of Integrated Industrial Areas (IIA). This article highlights the key steps to obtain an LOI, achieve IIA status, and secure approvals for the master plan and building plan. It also discusses various incentives and concessions available, such as Stamp Duty reductions, Additional FSI, Development Charges exemptions, Zone Conversion premiums, and changes in the record of rights.",
       keyPoints: [
         "Obtaining a Letter of Intent (LOI) is crucial to kickstart IIA development.",
@@ -89,9 +103,9 @@ const keyAreas = [
     },
     {
       "id":"service_7",
-      "title": "IT/ITES Parks and Data Centers in Maharashtra",
-      "subtitle": "Policy Overview and Incentives",
-      "image": "https://via.placeholder.com/300x200",
+      "title": " IT / ITES PARK & DATA CENTERS",
+      "subtitle": "Maharashtra's IT & IT / ITES Policy - 2015",
+      "image": service7Image,
       "description": "The Maharashtra government, under the IT & IT/ITES Policy of 2015, encourages the establishment of IT/ITES parks and data centers in the state. This policy facilitates the acquisition of a Letter of Intent (LOI) and IT Registration from relevant authorities such as the Development Commissioner, Industries (MIDC), Santacruz Electronic Export Processing Zone (SEEPZ), or Software Technology Parks of India (STPI). It provides incentives, including stamp duty exemption, electricity duty exemption, additional FSI, and property tax benefits, to promote the development of large data centers in Maharashtra. These incentives aim to attract investment, promote job creation, and foster technological advancement within the state.",
       keyPoints: [
         "The Maharashtra IT & IT/ITES Policy of 2015 supports the growth of IT/ITES parks and data centers.",
@@ -102,9 +116,9 @@ const keyAreas = [
     },
     {
       "id":"service_8",
-      "title": "Securing Mega Status for Industrial and Manufacturing Projects in Maharashtra",
-      "subtitle": "Unlocking Incentives and Benefits",
-      "image": "https://via.placeholder.com/300x200",
+      "title":"Maharashtra's IT & IT / ITES Policy - 2015",
+      "subtitle": "Securing Mega Status for Industrial and Manufacturing Projects in Maharashtra",
+      "image": service8Image,
       "description": "Securing Mega Status for industrial and manufacturing projects in Maharashtra opens the doors to a multitude of incentives and benefits under various government schemes and policies. This prestigious status is obtained through a meticulous process involving government authorities and offers substantial advantages, including stamp duty exemption, term loan facilitation, and Investment Promotion Subsidy (IPS) claims such as SGST refund, interest subsidy, electricity duty exemption, and power tariff benefits.",
       keyPoints: [
         "Mega Status is a valuable achievement for industrial and manufacturing projects in Maharashtra, granting access to a range of incentives and benefits.",
@@ -117,7 +131,7 @@ const keyAreas = [
       "id":"service_9",
       "title": "HOTEL & RESORTS APPROVALS & INCENTIVES",
       "subtitle": "Incentives under Maharashtra Tourism Policy 2016 & Approvals",
-      "image": "https://via.placeholder.com/300x200",
+      "image": service9Image,
       "description": "The Maharashtra Tourism Policy 2016 offers incentives to promote the hospitality industry. These include Provisional Registration Certificate (PRC) and Certificate of Entitlement, while star categorization can enhance benefits. Approval-wise, hotels need FL – III Registration, FSSAI Food License, MPCB Consent, Fire NOC, and Public Performance license for shows. Money Changers License for foreign currency, Standard Weight & Measures, and PESO compliance may also be required.",
       keyPoints: [
         "Maharashtra Tourism Policy 2016 provides incentives such as PRC and Certificate of Entitlement.",
@@ -128,10 +142,9 @@ const keyAreas = [
     },
     {
       "id":"service_10",
-      "title": "Incentives and Subsidies under Various Government Policies",
+      "title": "INCENTIVES / SUBSIDIES UNDER VARIUOS STATE & CENTRAL GOVT. POLICIES",
       "subtitle": "",
-      "image": "https://via.placeholder.com/300x200",
-      "description": "This content provides an overview of the process involved in securing incentives and subsidies under various state and central government policies. These policies aim to support businesses in different sectors and promote economic growth. Here's a summary of the key policies and the steps businesses need to take to access these benefits:",
+      "image": service10Image,
       keyPoints: [
         {
           title: "Package Scheme of Incentive (PSI) – 2019",
@@ -186,10 +199,9 @@ const keyAreas = [
     },
     {
       "id":"service_11",
-      "title": "Pre-Post Setup Industrial/Manufacturing Projects",
+      "title":"PRE-POST SETUP INDUSTRIAL / MANUFACTURING PROJECTS",
       "subtitle": "",
-      "image": "https://via.placeholder.com/300x200",
-      "description": "This content outlines the essential steps and requirements involved in setting up industrial or manufacturing projects. From entity formation to obtaining necessary licenses and approvals, here's a breakdown of the key tasks to ensure a smooth project setup process:",
+      "image": service11Image,
       keyPoints: [
         {
           title: "Entity Formation",

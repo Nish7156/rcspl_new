@@ -1,91 +1,62 @@
 import React, { useState } from 'react';
-import keyAreas from '../lib/KeyAreas';
+import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronUp, FaCircle } from 'react-icons/fa';
+import keyAreas from '../lib/KeyAreas'; // Import the keyAreas data
 
 const Accordion = () => {
-    const [activeItem, setActiveItem] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(null);
 
     const handleItemClick = (index) => {
-        setActiveItem(index === activeItem ? null : index);
+        setActiveIndex(index === activeIndex ? null : index);
     };
 
     return (
         <div className='container'>
-            <div className="section-head center">
-                <h2 className="aon-title">Our Services</h2>
+            <div className='service-header'>
+                <div className="section-head center">
+                    <h2 className="aon-title">Our Services</h2>
+                </div>
             </div>
-            <div className="accordion" id="accordionExample">
-                {keyAreas.map((data, index) => (
-                    <div className="accordion-item my-4 p-2 rounded-2 border-top" key={index}>
-                        <h2 className="accordion-header" id={`heading${index}`}>
-                            <button
-                                className={`accordion-button ${index === activeItem ? '' : 'collapsed'}`}
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target={`#collapse${index}`}
-                                aria-expanded={index === activeItem ? 'true' : 'false'}
-                                style={{ fontWeight: 'bold', borderRadius: '0' }}
-                                onClick={() => handleItemClick(index)}
-                            >
-                                {data.title}
-                            </button>
-                        </h2>
-                        <div
-                            id={`collapse${index}`}
-                            className={`accordion-collapse collapse ${index === activeItem ? 'show' : ''}`}
-                            aria-labelledby={`heading${index}`}
-                            data-bs-parent="#accordionExample"
-                        >
-                            <div className="accordion-body">
-                                <div className="row">
-                                    <div className="col-md-4">
-                                        <img
-                                            className="img-fluid rounded"
-                                            title="title"
-                                            alt=""
-                                            src={data.image} // Use the image URL from your data
-                                        />
-                                    </div>
-                                    <div className="col-md-8">
-                                        <div className="post-info d-flex flex-column h-100">
-                                            <div>
-                                                <div className="aon-post-text">
-                                                    <p>{data.description}</p>
-                                                </div>
-
-                                                <div>
-                                                    {data.keyPoints && data.keyPoints.length > 0 && !data.keyPoints[0].title && (
-                                                        <ul className="list-unstyled">
-                                                            {data?.keyPoints?.map((key, keyIndex) => (
-                                                                <li className="mx-2 d-flex align-items-center" key={keyIndex}>
-                                                                    <i className="feather-check m-2"></i>
-                                                                    <div>
-                                                                        {key}
-                                                                    </div>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    )}
-
-
-                                                    {data.keyPoints && data.keyPoints.length > 0 && data.keyPoints[0].title && (
-                                                        <ul className="list-unstyled">
-                                                            {data.keyPoints.map((keyPoint, keyIndex) => (
-                                                                <li className="mx-2" key={keyIndex}>
-                                                                    <div>
-                                                                        <h5>{keyPoint.title}</h5>
-                                                                        <p>{keyPoint.description}</p>
-                                                                    </div>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    )}
-                                                </div>
-                                            </div>
+            <div className="accordion ">
+                {keyAreas.map((item, index) => (
+                    <div
+                        key={item.id} // Use a unique key for each item
+                        className={`accordion-item ${index === activeIndex ? 'active' : ''}`}
+                       
+                    >
+                        <div className="accordion-title"  onClick={() => handleItemClick(index)}>
+                            <span>
+                                <FaCircle className="bullet-icon" /> {/* Use the bullet icon */}
+                                {item.title}
+                            </span>
+                            {index === activeIndex ? (
+                                <FaChevronUp className="arrow-icon" /> // Up arrow icon when active
+                            ) : (
+                                <FaChevronDown className="arrow-icon" /> // Down arrow icon when inactive
+                            )}
+                        </div>
+                        {index === activeIndex && (
+                            <div className="accordion-content">
+                                <div className='acc-image'>
+                                    <img src={item.image} alt={item.title} className="accordion-image" />
+                                </div>
+                                <h5 className='subtitle'>{item.subtitle} </h5>
+                                {item.description &&  <p>{item.description}</p>}
+                                <ul>
+                                    {!item.keyPoints[0].title && item.keyPoints.map((point, i) => (
+                                        <li key={i} className='li' >{point}</li>
+                                    ))}
+                                </ul>
+                                <div>
+                                    {item.keyPoints[0].title && item.keyPoints.map((point, i) => (
+                                        < div  className='point'>
+                                        <div key={i} className='title'>{point.title}</div>
+                                        <div className='description'>{point.description}</div>
                                         </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
-                        </div>
+                        )}
                     </div>
                 ))}
             </div>
@@ -94,3 +65,6 @@ const Accordion = () => {
 };
 
 export default Accordion;
+
+
+
