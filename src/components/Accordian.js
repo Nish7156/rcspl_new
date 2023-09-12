@@ -20,7 +20,7 @@ const Accordion = () => {
             <div className="accordion ">
                 {keyAreas.map((item, index) => (
                     <div
-                        key={item.id} // Use a unique key for each item
+                        key={item.id} 
                         className={`accordion-item ${index === activeIndex ? 'active' : ''}`}
                        
                     >

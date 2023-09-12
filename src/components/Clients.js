@@ -82,8 +82,8 @@ const Clients = () => {
   };
 
   return (
-    <div className="">
-      <div className="container">
+    <div className="" style={{marginBottom:"20px"}}>
+      <div className="container" id="about">
         <div className="section-header">
           <h5 className="subtitle">Our Clients</h5>
           <h2>They trust us</h2>

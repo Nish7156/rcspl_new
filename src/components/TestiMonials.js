@@ -37,7 +37,7 @@ const TestiMonials = () => {
   };
 
   return (
-    <div className="" style={customStyles}>
+    <div className="" >
       <div className="container">
         <div className="section-header">
           <h5 className="subtitle">Testimonials</h5>
