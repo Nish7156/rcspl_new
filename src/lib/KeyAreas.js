@@ -14,6 +14,7 @@ const keyAreas = [
       ],
     },
     {
+      "id":"service_2",
       "title": "MIDC Plot Allotment",
       "subtitle": "MIDC Plot Allotment Types and Authorities",
       "image": "https://via.placeholder.com/300x200",
@@ -26,6 +27,7 @@ const keyAreas = [
       ],
     },
     {
+      "id":"service_3",
       "title": "MIDC Approvals Process",
       "subtitle": "Pre and Post Establishment Approvals in MIDC",
       "image": "https://via.placeholder.com/300x200",
@@ -44,7 +46,7 @@ const keyAreas = [
         "Execution of Final Lease Agreement",
       ],
     },
-    {
+    { "id":"service_4",
       "title": "Non-Agriculture (NA) Conversion",
       "subtitle": "Understanding NA Conversion and Expertise Areas",
       "image": "https://via.placeholder.com/300x200",
@@ -59,6 +61,7 @@ const keyAreas = [
       ],
     },
     {
+      "id":"service_5",
       "title": "Integrated Logistic Parks (ILP) in Maharashtra",
       "subtitle": "Maharashtra's Logistic Park Policy - 2018",
       "image": "https://via.placeholder.com/300x200",
@@ -71,6 +74,7 @@ const keyAreas = [
       ],
     },
     {
+      "id":"service_6",
       "title": "Incentives for Developing Integrated Industrial Areas",
       "subtitle": "Unlocking Opportunities in 2018",
       "image": "https://via.placeholder.com/300x200",
@@ -84,6 +88,7 @@ const keyAreas = [
       ],
     },
     {
+      "id":"service_7",
       "title": "IT/ITES Parks and Data Centers in Maharashtra",
       "subtitle": "Policy Overview and Incentives",
       "image": "https://via.placeholder.com/300x200",
@@ -96,6 +101,7 @@ const keyAreas = [
       ],
     },
     {
+      "id":"service_8",
       "title": "Securing Mega Status for Industrial and Manufacturing Projects in Maharashtra",
       "subtitle": "Unlocking Incentives and Benefits",
       "image": "https://via.placeholder.com/300x200",
@@ -108,6 +114,7 @@ const keyAreas = [
       ],
     },
     {
+      "id":"service_9",
       "title": "HOTEL & RESORTS APPROVALS & INCENTIVES",
       "subtitle": "Incentives under Maharashtra Tourism Policy 2016 & Approvals",
       "image": "https://via.placeholder.com/300x200",
@@ -120,6 +127,7 @@ const keyAreas = [
       ],
     },
     {
+      "id":"service_10",
       "title": "Incentives and Subsidies under Various Government Policies",
       "subtitle": "",
       "image": "https://via.placeholder.com/300x200",
@@ -177,6 +185,7 @@ const keyAreas = [
       ],
     },
     {
+      "id":"service_11",
       "title": "Pre-Post Setup Industrial/Manufacturing Projects",
       "subtitle": "",
       "image": "https://via.placeholder.com/300x200",
