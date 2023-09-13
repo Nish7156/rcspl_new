@@ -21,6 +21,7 @@ const Accordion = () => {
                 {keyAreas.map((item, index) => (
                     <div
                         key={item.id} 
+                        id={item.id} 
                         className={`accordion-item ${index === activeIndex ? 'active' : ''}`}
                        
                     >
