@@ -1,18 +1,42 @@
-header .main-nav ul li > ul{
+header .main-nav ul li > ul {
   min-width: 550px !important;
   cursor: pointer !important;
 }
 
-.slick-dots li button {
-	background-color: #FFC425 !important;
-	height: 10px;
-	width: 10px;
-	text-indent: -9999px;
-	overflow:hidden; 
-	}
+@media (max-width: 768px) {
+  header .main-nav ul li > ul {
+    min-width: 300px !important;
+    text-align: start;
+  }
+  header .main-nav ul li > ul li {
+    padding: 5px 20px !important;
+  }
+}
 
-	.slider-flex{
-		display: flex;
-		justify-content: center;
-		text-align: center;
-	}
+.slick-dots li button {
+  background-color: #ffc425 !important;
+  height: 10px;
+  width: 10px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.slider-flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-list {
+  margin: 8px 0px;
+  cursor: pointer;
+}
+.service-list:hover {
+  color: #ffff;
+}
+
+
+#main-title{
+	font-size: 36px !important;
+	font-weight: bold !important;
+}

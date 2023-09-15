@@ -9,7 +9,7 @@ function contactUs() {
             <div id="note"></div>
             <div id="fields">
               <form class="respond-form" id="ajax-contact-form" action="#">
-                <h6>Drop us a line</h6>
+                <h6>ENQUIRE NOW</h6>
 
                 <div class="input-line">
                   <input type="text" name="name" class="check-value" />
@@ -46,23 +46,23 @@ function contactUs() {
                     <h4 class="widget-title">Contact Info</h4>
                     <div class="widget-body">
                       <ul class="contact-info clean-list">
-                        <li>
-                          <span class="title">Address:</span>
-                          <p>121 King Street, Melbourne</p>
-                          <p>Victoria 3000 Australia</p>
-                        </li>
-                        <li>
-                          <span class="title">Phone:</span>
-                          <p>+1 (800) 456 37 96 - Office</p>
-                        </li>
-                        <li>
-                          <span class="title">Email:</span>
-                          <p>
-                            <a href="mailto:email@gt3themes.com">
-                              email@gt3themes.com
-                            </a>
-                          </p>
-                        </li>
+                      <li>
+                        <span class="title">Address:</span>
+                        <p>
+                          1314, 13th Floor, C1, Opal Square,CS. G. Barve Road,
+                        </p>
+                        <p>Wagle Estate, Thane - 400604, Maharashtra, India.</p>
+                      </li>
+                      <li>
+                        <span class="title">Phone:</span>
+                        <p>Call Me 98220 59460</p>
+                      </li>
+                      <li>
+                        <span class="title">Email:</span>
+                        <p>
+                          <a href="mailto:info@rcspl.co.in">info@rcspl.co.in</a>
+                        </p>
+                      </li>
                         <li>
                           <span class="title">Follow Us:</span>
                           <ul class="socials clean-list">

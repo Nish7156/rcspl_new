@@ -14,14 +14,14 @@ function WhyChooseUs() {
       title: "Expertise",
       subtitle: "Highly qualified professionals",
       description:
-        "Our team comprises highly qualified, experienced, and dynamic professionals, including Chartered Accountants, Company Secretaries, Advocates, Lawyers, MBAs, Chartered Engineers, Architects, and Government Approved Valuators. Their expertise ensures customized solutions tailored to your unique needs.",
+        "Our team comprises highly qualified, experienced, and dynamic professionals, including Chartered Accountants, Company Secretaries, Advocates, Lawyers, MBAs, Chartered Engineers, Architects, and Government Approved Valuators.",
     },
     {
       icon: <FaFileAlt style={{ color: "palegoldenrod" }} />,
       title: "Customized Reports",
       subtitle: "Tailored reports for your needs",
       description:
-        "Our expert team provides various tailored reports, including Survey, Analysis, Investigation, and Search Reports. These reports cover technical, legal, financial, marketing, and operational aspects. We also assess project feasibility and viability to give you a clear picture of your project's potential.",
+        "Our expert team provides various tailored reports, including Survey, Analysis, Investigation, and Search Reports. These reports cover technical, legal, financial, marketing, and operational aspects.",
     },
     {
       icon: <FaLightbulb style={{ color: "palegoldenrod" }} />,
@@ -46,7 +46,7 @@ function WhyChooseUs() {
           <div className="row">
             <div className="col-md-4 col-sm-12 col-lg-4">
               <div className="service-box">
-                <h3 className="title">{companyData.name}</h3>
+                <h3 style={{fontSize:"24px"}} className="title">{companyData.name}</h3>
                 <p className="description">{companyData.description}</p>
               </div>
             </div>

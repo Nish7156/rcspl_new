@@ -58,63 +58,50 @@ function Footer() {
 
               <div class="col-md-3 col-sm-6 col-xs-12 isotope-item">
                 <div class="widget widget_instagram">
-                  <h4 class="widget-title">Follow Instagram</h4>
-                  <div class="widget-body">
-                    <ul
-                      class="instagram-feed clean-list"
-                      data-instagram="6"
-                      data-instagram-username="paul_garrat"
-                    ></ul>
+                  <h4 class="widget-title">SERVICES</h4>
+                  <div class="">
+                    <ul>
+                      <li className="service-list">Entity Formation, Drafting & Legal Services</li>
+                      <li className="service-list">Preparation of Project Report</li>
+                      <li className="service-list">Project Finance Consultancy</li>
+                      <li className="service-list">Project Location & Utility Services</li>
+                      <li className="service-list">
+                        NA - Converting Agricultural Land to Industrial
+                        Non-Agriculture
+                      </li>
+                      <li className="service-list">
+                        Approval of building Plan from Town Planning Dept.
+                      </li>
+                      <li className="service-list">MIDC Plot Allotment & Allied Services</li>
+                      <li className="service-list">Industrial / Business Licensing & Registrations</li>
+                      <li className="service-list">
+                        State & Central Govt. Subsidies, Grants & Incentives
+                      </li>
+                      <li className="service-list">Import & Export Services</li>
+                    </ul>
                   </div>
                 </div>
               </div>
 
               <div class="col-md-3 col-sm-6 col-xs-12 isotope-item">
                 <div class="widget widget_recent_posts">
-                  <h4 class="widget-title">Recent Posts</h4>
+                  <h4 class="widget-title">HELP DESK</h4>
                   <div class="widget-body">
                     <ul class="recent-posts clean-list">
                       <li>
                         <h4>
-                          <a href="#">Standard gallery post</a>
+                          <a href="#">FD Calculator</a>
                         </h4>
-                        <ul class="post-meta">
-                          <li>June 09, 2018</li>
-                          <li>
-                            by <a href="#">Mixuha</a>
-                          </li>
-                          <li>
-                            <a href="#">3 Comments</a>
-                          </li>
-                        </ul>
                       </li>
                       <li>
                         <h4>
-                          <a href="#">Post with couple photos inside</a>
+                          <a href="#">RD Calculator</a>
                         </h4>
-                        <ul class="post-meta">
-                          <li>June 09, 2018</li>
-                          <li>
-                            by <a href="#">Mixuha</a>
-                          </li>
-                          <li>
-                            <a href="#">3 Comments</a>
-                          </li>
-                        </ul>
                       </li>
                       <li>
                         <h4>
-                          <a href="#">Smart quote post</a>
+                          <a href="#">EMI Calculator</a>
                         </h4>
-                        <ul class="post-meta">
-                          <li>June 09, 2018</li>
-                          <li>
-                            by <a href="#">Mixuha</a>
-                          </li>
-                          <li>
-                            <a href="#">3 Comments</a>
-                          </li>
-                        </ul>
                       </li>
                     </ul>
                   </div>

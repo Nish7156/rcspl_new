@@ -37,21 +37,11 @@ const TestiMonials = () => {
   };
 
   return (
-    <div className="" >
+    <div className="">
       <div className="container">
         <div className="section-header">
           <h5 className="subtitle">Testimonials</h5>
-          <h2>What people say</h2>
-          <span>
-            <i></i>
-          </span>
-          <p>
-            Cras finibus non magna sed varius. Fusce risus eros, dapibus vitae
-            dignissim vel, consequat et dolor. Proin maximus posuere felis a
-            tincidunt. Etiam sit amet ligula eget libero suscipit semper eget
-            ornare magna. Phasellus non est ligula. Nulla auctor neque non
-            tortor.
-          </p>
+          <h2 id="main-title">What people say</h2>
         </div>
 
         <Slider {...settings}>
