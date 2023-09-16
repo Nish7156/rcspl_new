@@ -1,4 +1,5 @@
 import React from "react";
+import keyAreas from "../../lib/KeyAreas";
 
 function Footer() {
   return (
@@ -61,23 +62,13 @@ function Footer() {
                   <h4 class="widget-title">SERVICES</h4>
                   <div class="">
                     <ul>
-                      <li className="service-list">Entity Formation, Drafting & Legal Services</li>
-                      <li className="service-list">Preparation of Project Report</li>
-                      <li className="service-list">Project Finance Consultancy</li>
-                      <li className="service-list">Project Location & Utility Services</li>
-                      <li className="service-list">
-                        NA - Converting Agricultural Land to Industrial
-                        Non-Agriculture
-                      </li>
-                      <li className="service-list">
-                        Approval of building Plan from Town Planning Dept.
-                      </li>
-                      <li className="service-list">MIDC Plot Allotment & Allied Services</li>
-                      <li className="service-list">Industrial / Business Licensing & Registrations</li>
-                      <li className="service-list">
-                        State & Central Govt. Subsidies, Grants & Incentives
-                      </li>
-                      <li className="service-list">Import & Export Services</li>
+                      {keyAreas.map((data) => {
+                        return (
+                          <li key={data.id} className="service-list">
+                            <a href={`#${data.id}`}>{data.title}</a>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp, FaCircle } from "react-icons/fa";
 import keyAreas from "../lib/KeyAreas"; // Import the keyAreas data
@@ -7,9 +7,48 @@ const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleItemClick = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
+    setActiveIndex((prevIndex) => (index === prevIndex ? null : index));
   };
 
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+
+    const index = keyAreas.findIndex((item) => item.id === hash);
+
+    if (index !== -1) {
+      setActiveIndex(index);
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.substring(1);
+      const index = keyAreas.findIndex((item) => item.id === hash);
+      if (index !== -1) {
+        setActiveIndex(index);
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+
+    if (hash) {
+      const targetElement = document.getElementById(hash);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+    }
+  }, []);
   return (
     <div className="container">
       <div className="service-header">
