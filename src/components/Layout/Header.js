@@ -6,8 +6,8 @@ function Header() {
     return (
       <ul className="sub-menu">
         {subMenuData.map((item, index) => (
-          <li key={index} className="menu-item">
-            <a href={item.subLink}>{item.subTitle}</a>
+          <li key={index} className="menu-item current-menu-parent">
+            <a href={`#${item.id}`}>{item.subTitle}</a>
           </li>
         ))}
       </ul>
