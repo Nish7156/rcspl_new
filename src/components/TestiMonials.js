@@ -23,10 +23,11 @@ const TestiMonials = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    speed: 1000,
+    autoplay: true,
   };
   const customStyles = {
     backgroundImage: `url(${testmon})`, // Apply the background image

@@ -24,7 +24,6 @@ const Address = () => {
         </h2>
         <p
           style={{
-            textAlign: "center",
             margin: "20px 0px",
           }}
         >
