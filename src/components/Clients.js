@@ -64,25 +64,29 @@ const Clients = () => {
     speed: 1000,
     autoplay: true,
     responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            slidesToShow: 2,
-          },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 2,
         },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            slidesToShow: 1,
-          },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          speed: 1000,
+          autoplay: true,
+          slidesToScroll: 1,
+          dots: false,
         },
-      ],
+      },
+    ],
   };
 
   return (
-    <div className="" style={{marginBottom:"20px"}}>
+    <div className="" style={{ marginBottom: "20px" }}>
       <div className="container" id="about">
         <div className="section-header">
           <h5 className="subtitle">Our Clients</h5>

@@ -61,7 +61,7 @@ function Footer() {
                 <div class="widget widget_instagram">
                   <h4 class="widget-title">SERVICES</h4>
                   <div class="">
-                    <ul>
+                    <ul style={{marginLeft:"12px"}}>
                       {keyAreas.map((data) => {
                         return (
                           <li key={data.id} className="service-list">
@@ -75,7 +75,7 @@ function Footer() {
               </div>
 
               <div class="col-md-3 col-sm-6 col-xs-12 isotope-item">
-                <div class="widget widget_recent_posts">
+                {/* <div class="widget widget_recent_posts">
                   <h4 class="widget-title">HELP DESK</h4>
                   <div class="widget-body">
                     <ul class="recent-posts clean-list">
@@ -96,7 +96,7 @@ function Footer() {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div class="col-md-3 col-sm-6 col-xs-12 isotope-item">
