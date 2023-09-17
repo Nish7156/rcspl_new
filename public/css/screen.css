@@ -5044,7 +5044,7 @@ ul.page-numbers.shop:after {
 
   header .main-nav.visible {
     visibility: visible;
-    cursor: url(../img/close-menu.png), default;
+    cursor: url(../img/slider/cross-png-29390.png), default;
     opacity: 1;
     filter: alpha(opacity=100);
     -webkit-transform: translate3d(0, 0, 0);

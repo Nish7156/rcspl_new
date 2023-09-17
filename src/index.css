@@ -12,6 +12,15 @@ header .main-nav ul li > ul {
     padding: 5px 20px !important;
   }
 }
+#cross{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #cross{
+    display: block;
+  }
+}
 
 .slick-dots li button {
   background-color: #ffc425 !important;
@@ -40,6 +49,11 @@ header .main-nav ul li > ul {
 	font-size: 36px !important;
 	font-weight: bold !important;
 }
+@media (max-width: 768px) {
+  #main-title{
+   font-size: 26px !important;
+  }
+}
 
 .mobile-menu {
   position: fixed;
@@ -61,4 +75,8 @@ header .main-nav ul li > ul {
   font-size: 30px;
   cursor: pointer;
   color: white;
+}
+
+.mobile-menu-hidden {
+  display: none;
 }

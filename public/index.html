@@ -73,7 +73,20 @@
                 <a href="/"> RCSPL<span>.</span> </a>
               </div>
 
-              <nav class="main-nav">
+              <nav class="main-nav" id="mobile-nav">
+                <div
+                  id="cross"
+                  style="
+                    color: black;
+                    top: 20px;
+                    left: 20px;
+                    position: absolute;
+                    height: 20px;
+                    width: 20px;
+                  "
+                >
+                  <img src="./img/slider/cross-png-29390.png" />
+                </div>
                 <ul class="menu">
                   <li
                     class="menu-item menu-item-has-children current-menu-parent"
@@ -644,6 +657,33 @@
         hideSliderSection(); // Check on initial page load
         $(window).on("popstate", hideSliderSection); // Check whenever the URL changes
       });
+      // JavaScript/jQuery
+$(document).ready(function () {
+  // Function to add the 'visible' class to the mobile navigation menu
+  function showMobileMenu() {
+    $("#mobile-nav").addClass("visible");
+  }
+
+  // Function to remove the 'visible' class from the mobile navigation menu
+  function hideMobileMenu() {
+    $("#mobile-nav").removeClass("visible");
+  }
+
+  // Add a click event listener to the cross element
+  $("#cross").click(function () {
+    hideMobileMenu(); // Remove the 'visible' class when the cross is clicked
+  });
+
+  // Add a click event listener to the mobile navigation button
+  $(".mobile-navigation-toggle").click(function () {
+    showMobileMenu(); // Add the 'visible' class when the button is clicked
+  });
+  $("#mobile-nav .sub-menu .menu-item a").click(function () {
+    hideMobileMenu(); 
+  });
+});
+
+      // JavaScript/jQuery
     </script>
     <script>
       var scroll = new SmoothScroll('a[href*="#"]', {
