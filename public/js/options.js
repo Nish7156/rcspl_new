@@ -106,7 +106,7 @@
       this.slidersInit();
       this.instagramFeed();
       this.checkVisible();
-      this.smallToggles();
+      // this.smallToggles();
       this.statsCounter();
       this.isotopeInit();
       this.magnificInit();
