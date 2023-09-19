@@ -105,8 +105,15 @@ header .main-nav ul li > ul {
   font-size: 26px !important;
 }
 
+#sliderHead{
+  font-size: 32px !important;
+}
 @media (max-width: 768px) {
   #sliderSubHeading{
-    font-size: 10px !important;
+   display: none !important;
+  }
+  #sliderHead{
+    font-size: 18px !important;
   }
 }
+

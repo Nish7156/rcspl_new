@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>RCSPL</title>
-    <meta name="description" content="Here goes description" />
-    <meta name="author" content="author name" />
+    <meta
+      name="description"
+      content="Your reliable partner in the world of manufacturing projects. With a rich history dating back to 2006, we have been consistently delivering excellence in a one-stop solution for manufacturing projects related services."
+    />
+    <meta name="author" content="RCSPL" />
     <link rel="shortcut icon" href="MainLogo.png" type="image/x-icon" />
 
     <!-- Mobile Specific Meta -->
@@ -88,9 +91,7 @@
                   <img src="./img/slider/cross-png-29390.png" />
                 </div>
                 <ul class="menu">
-                  <li
-                    class="menu-item menu-item-has-children current-menu-parent"
-                  >
+                  <li class="menu-item current-menu-parent">
                     <a href="/">Home</a>
                   </li>
                   <li class="menu-item">
@@ -149,7 +150,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="menu-item menu-item-has-children">
+                  <li class="menu-item">
                     <a href="/contact-us">Contact us</a>
                   </li>
                 </ul>
@@ -172,7 +173,7 @@
                     <ul>
                       <li data-transition="fade">
                         <img
-                          src="img/slider/slider6.jpg"
+                          src="img/slider/slider11.jpg"
                           alt="slide1"
                           data-bgfit="cover"
                           data-bgposition="center center"
@@ -191,6 +192,7 @@
                         />
 
                         <div
+                          id="sliderHead"
                           class="tp-caption WhiteTtl tp-resizeme"
                           data-x="center"
                           data-hoffset="0"
@@ -202,7 +204,6 @@
                           data-transform_out="opacity:0;s:500;s:500;"
                           data-start="1300"
                           data-responsive_offset="on"
-                          
                         >
                           Project Reports and Approvals
                         </div>
@@ -218,7 +219,7 @@
                           data-transform_out="opacity:0;s:500;s:500;"
                           data-start="1700"
                           data-responsive_offset="on"
-                         id="sliderSubHeading"
+                          id="sliderSubHeading"
                         >
                           Streamline your project management with efficient
                           reporting and timely approvals.
@@ -245,6 +246,7 @@
                         />
 
                         <div
+                          id="sliderHead"
                           class="tp-caption WhiteTtl tp-resizeme"
                           data-x="center"
                           data-hoffset="0"
@@ -310,6 +312,7 @@
                           data-transform_out="opacity:0;s:500;s:500;"
                           data-start="1300"
                           data-responsive_offset="on"
+                          id="sliderHead"
                         >
                           Hospitality and Food Industry
                         </div>
@@ -648,6 +651,9 @@
           $("#slider-section").show();
           $("#contactSection").hide();
         }
+        if (window.location.href.indexOf("#about") != -1) {
+          $("#mobile-nav").removeClass("visible");
+        }
       }
 
       $(document).ready(function () {
@@ -655,30 +661,30 @@
         $(window).on("popstate", hideSliderSection); // Check whenever the URL changes
       });
       // JavaScript/jQuery
-$(document).ready(function () {
-  // Function to add the 'visible' class to the mobile navigation menu
-  function showMobileMenu() {
-    $("#mobile-nav").addClass("visible");
-  }
+      $(document).ready(function () {
+        // Function to add the 'visible' class to the mobile navigation menu
+        function showMobileMenu() {
+          $("#mobile-nav").addClass("visible");
+        }
 
-  // Function to remove the 'visible' class from the mobile navigation menu
-  function hideMobileMenu() {
-    $("#mobile-nav").removeClass("visible");
-  }
+        // Function to remove the 'visible' class from the mobile navigation menu
+        function hideMobileMenu() {
+          $("#mobile-nav").removeClass("visible");
+        }
 
-  // Add a click event listener to the cross element
-  $("#cross").click(function () {
-    hideMobileMenu(); // Remove the 'visible' class when the cross is clicked
-  });
+        // Add a click event listener to the cross element
+        $("#cross").click(function () {
+          hideMobileMenu(); // Remove the 'visible' class when the cross is clicked
+        });
 
-  // Add a click event listener to the mobile navigation button
-  $(".mobile-navigation-toggle").click(function () {
-    showMobileMenu(); // Add the 'visible' class when the button is clicked
-  });
-  $("#mobile-nav .sub-menu .menu-item a").click(function () {
-    hideMobileMenu(); 
-  });
-});
+        // Add a click event listener to the mobile navigation button
+        $(".mobile-navigation-toggle").click(function () {
+          showMobileMenu(); // Add the 'visible' class when the button is clicked
+        });
+        $("#mobile-nav .sub-menu .menu-item a").click(function () {
+          hideMobileMenu();
+        });
+      });
 
       // JavaScript/jQuery
     </script>

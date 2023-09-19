@@ -11,10 +11,10 @@ function Home() {
   return (
     <>
       <WhyChooseUs />
+      <Expirence/>
       <Accordion keyAreas={keyAreas} />
       <Address />
       <TestiMonials />
-      <Expirence/>
       <Clients />
     </>
   );
