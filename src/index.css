@@ -12,12 +12,12 @@ header .main-nav ul li > ul {
     padding: 5px 20px !important;
   }
 }
-#cross{
+#cross {
   display: none;
 }
 
 @media (max-width: 768px) {
-  #cross{
+  #cross {
     display: block;
   }
 }
@@ -64,14 +64,13 @@ header .main-nav ul li > ul {
   color: #ffff;
 }
 
-
-#main-title{
-	font-size: 36px !important;
-	font-weight: bold !important;
+#main-title {
+  font-size: 36px !important;
+  font-weight: bold !important;
 }
 @media (max-width: 768px) {
-  #main-title{
-   font-size: 26px !important;
+  #main-title {
+    font-size: 26px !important;
   }
 }
 
@@ -101,19 +100,36 @@ header .main-nav ul li > ul {
   display: none;
 }
 
-#sliderSubHeading{
+#sliderSubHeading {
   font-size: 26px !important;
 }
+#inPhone {
+  display: none;
+}
 
-#sliderHead{
+#sliderHead {
   font-size: 32px !important;
 }
 @media (max-width: 768px) {
-  #sliderSubHeading{
-   display: none !important;
+  #sliderSubHeading {
+    display: none !important;
   }
-  #sliderHead{
-    font-size: 18px !important;
+  #sliderHead {
+    display: none !important;
+  }
+  #inPhone {
+    display: inline;
+  }
+  .fade-in-image {
+    animation: fadeIn 10s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
-
