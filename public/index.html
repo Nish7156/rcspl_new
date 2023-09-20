@@ -195,7 +195,7 @@
                         />
 
                         <div
-                        class="fade-in-image"
+                          class="fade-in-image"
                           id="inPhone"
                           style="
                             padding: 24px;
@@ -738,6 +738,26 @@
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/options.js"></script>
     <script>
+      $(document).ready(function () {
+  // Function to scroll the screen down by 20%
+  function scrollDownBy20Percent() {
+    const currentScrollPosition = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const scrollAmount = currentScrollPosition + windowHeight * 0.9; // 20% of window height
+
+    $('html, body').animate(
+      {
+        scrollTop: scrollAmount,
+      },
+      500 // Adjust the scrolling duration as needed
+    );
+  }
+
+  // Add a click event listener to elements with the "scroll-trigger" class
+  $('.scroll').click(function () {
+    scrollDownBy20Percent();
+  });
+});
       // Function to hide the slider section if the URL contains "/contact-us"
       function hideSliderSection() {
         if (window.location.href.indexOf("/contact-us") !== -1) {
