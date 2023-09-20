@@ -121,7 +121,7 @@ header .main-nav ul li > ul {
     display: inline;
   }
   .fade-in-image {
-    animation: fadeIn 10s;
+    animation: fadeIn 5s;
   }
 
   @keyframes fadeIn {
