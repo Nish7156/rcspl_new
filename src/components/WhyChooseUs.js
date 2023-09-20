@@ -10,28 +10,28 @@ function WhyChooseUs() {
 
   const services = [
     {
-      icon: <FaHome style={{ color: "palegoldenrod" }} />,
+      icon: <FaHome style={{ color: "#ffc425" }} />,
       title: "Expertise",
       subtitle: "Highly qualified professionals",
       description:
         "Our team comprises highly qualified, experienced, and dynamic professionals, including Chartered Accountants, Company Secretaries, Advocates, Lawyers, MBAs, Chartered Engineers, Architects, and Government Approved Valuators.",
     },
     {
-      icon: <FaFileAlt style={{ color: "palegoldenrod" }} />,
+      icon: <FaFileAlt style={{ color: "#ffc425" }} />,
       title: "Customized Reports",
       subtitle: "Tailored reports for your needs",
       description:
         "Our expert team provides various tailored reports, including Survey, Analysis, Investigation, and Search Reports. These reports cover technical, legal, financial, marketing, and operational aspects.",
     },
     {
-      icon: <FaLightbulb style={{ color: "palegoldenrod" }} />,
+      icon: <FaLightbulb style={{ color: "#ffc425" }} />,
       title: "Comprehensive Services",
       subtitle: "Specializing in licenses, approvals, permissions & more",
       description:
         "We specialize in licenses, approvals, permissions, consents, NOCs, subsidies, incentives, and project finance consultancy. Our comprehensive range of services ensures that you have all the support you need for your manufacturing projects.",
     },
     {
-      icon: <FaBriefcase style={{ color: "palegoldenrod" }} />,
+      icon: <FaBriefcase style={{ color: "#ffc425" }} />,
       title: "Client-Centric Approach",
       subtitle: "Committed to your project's success",
       description:

@@ -11,12 +11,10 @@ function Home() {
   return (
     <>
       <WhyChooseUs />
-      <Expirence/>
+      <Expirence />
       <Accordion keyAreas={keyAreas} />
-      <section id="about">
-
+      <section style={{ height: "88px" }} id="about"></section>
       <Address />
-      </section>
       <TestiMonials />
       <Clients />
     </>
