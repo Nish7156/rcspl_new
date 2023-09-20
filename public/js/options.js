@@ -106,7 +106,7 @@
       this.slidersInit();
       this.instagramFeed();
       this.checkVisible();
-      // this.smallToggles();
+      this.smallToggles();
       this.statsCounter();
       this.isotopeInit();
       this.magnificInit();
@@ -402,9 +402,9 @@
 
     smallToggles: function () {
       $(".mobile-navigation-toggle").on("click", function () {
-        $(".top-menu").toggleClass("top-animate");
-        $(".mid-menu").toggleClass("mid-animate");
-        $(".bottom-menu").toggleClass("bottom-animate");
+        // $(".top-menu").toggleClass("top-animate");
+        // $(".mid-menu").toggleClass("mid-animate");
+        // $(".bottom-menu").toggleClass("bottom-animate");
         $("header .main-nav").toggleClass("visible");
         $("html").toggleClass("header-mobile-view");
       });
