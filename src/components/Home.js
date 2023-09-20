@@ -13,7 +13,10 @@ function Home() {
       <WhyChooseUs />
       <Expirence/>
       <Accordion keyAreas={keyAreas} />
+      <section id="about">
+
       <Address />
+      </section>
       <TestiMonials />
       <Clients />
     </>

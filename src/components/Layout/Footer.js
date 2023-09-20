@@ -58,20 +58,7 @@ function Footer() {
               </div>
 
               <div class="col-md-3 col-sm-6 col-xs-12 isotope-item">
-                <div class="widget widget_instagram">
-                  <h4 class="widget-title">SERVICES</h4>
-                  <div class="">
-                    <ul style={{marginLeft:"12px"}}>
-                      {keyAreas.map((data) => {
-                        return (
-                          <li key={data.id} className="service-list">
-                            <a href={`#${data.id}`}>{data.title}</a>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                </div>
+                <div class="widget widget_instagram"></div>
               </div>
 
               <div class="col-md-3 col-sm-6 col-xs-12 isotope-item">

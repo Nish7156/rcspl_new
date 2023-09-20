@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Address = () => {
   return (
-    <div className="container" id="about">
+    <div className="container" >
       <div
         style={{
           fontSize: "14px",

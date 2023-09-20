@@ -1,6 +1,7 @@
 *, html {
 
   scroll-behavior: smooth !important;
+  scroll-snap-align: start;
 }
 .App {
   text-align: center;
