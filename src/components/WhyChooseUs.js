@@ -26,7 +26,7 @@ function WhyChooseUs() {
     {
       icon: <FaLightbulb style={{ color: "palegoldenrod" }} />,
       title: "Comprehensive Services",
-      subtitle: "Specializing in licenses, approvals, permissions, and more",
+      subtitle: "Specializing in licenses, approvals, permissions & more",
       description:
         "We specialize in licenses, approvals, permissions, consents, NOCs, subsidies, incentives, and project finance consultancy. Our comprehensive range of services ensures that you have all the support you need for your manufacturing projects.",
     },
