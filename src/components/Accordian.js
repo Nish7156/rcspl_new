@@ -39,7 +39,7 @@ const Accordion = () => {
     if (index !== -1) {
       setActiveIndex(index);
     }
-  }, []);
+  }, [window.location.hash]);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -55,7 +55,7 @@ const Accordion = () => {
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
     };
-  }, []);
+  }, [window.location.hash]);
 
   useEffect(() => {
     const hash = window.location.hash.substring(1);
@@ -68,81 +68,104 @@ const Accordion = () => {
           behavior: "smooth",
           block: "start",
           inline: "nearest",
-          blockOffset: windowHeight - 90,
+          blockOffset: windowHeight,
         });
       }
     }
-  }, []);
+  }, [window.location.hash]);
 
   return (
-    <div className="container">
-      <div className="service-header">
-        <div className="section-head center">
+    <div className='container'>
+      <div className='service-header'>
+        <div className='section-head center'>
           <h2
-            className="aon-title"
+            className='aon-title'
             style={{ fontSize: "32px", fontWeight: "bold" }}
           >
             Our Services
           </h2>
         </div>
       </div>
-      <div className="accordion " style={{ padding: "8px" }}>
+      <div className='accordion ' style={{ padding: "8px" }}>
         {imagesLoaded &&
           keyAreas.map((item, index) => (
-            <div
-              style={{ marginBottom: "32px", padding: "16px" }}
-              key={item.id}
-              id={item.id}
-              className={`accordion-item ${
-                index === activeIndex ? "active" : ""
-              }`}
-            >
+            <>
               <div
-                className="accordion-title"
-                onClick={() => handleItemClick(index)}
-                style={{ borderRadius: "8px" }}
+                style={{
+                  height: index === activeIndex ? "88px" : "32px", // Set the height to 88px when active, otherwise auto
+                }}
+                key={item.title}
+                id={item.id}
               >
-                <span>
-                  <FaCircle className="bullet-icon" /> {item.title}
-                </span>
-                {index === activeIndex ? (
-                  <FaChevronUp className="arrow-icon" />
-                ) : (
-                  <FaChevronDown className="arrow-icon" />
-                )}
+                {" "}
               </div>
-              {index === activeIndex && (
-                <div className="accordion-content">
-                  <div className="acc-image">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="accordion-image"
-                      style={{ height: "50%" }}
-                    />
+              <div style={{ position: "relative" }}>
+                <div
+                  // style={{ marginBottom: "32px", padding: "16px" }}
+                  key={item.id}
+                  className={`accordion-item ${
+                    index === activeIndex ? "active" : ""
+                  }`}
+                >
+                  <div
+                    className='accordion-title'
+                    onClick={() => handleItemClick(index)}
+                    style={{ borderRadius: "8px" }}
+                  >
+                    <span>
+                      <FaCircle className='bullet-icon' /> {item.title}
+                    </span>
+                    {index === activeIndex ? (
+                      <FaChevronUp className='arrow-icon' />
+                    ) : (
+                      <FaChevronDown className='arrow-icon' />
+                    )}
                   </div>
-                  <h5 className="subtitle">{item.subtitle} </h5>
-                  {item.description && <p>{item.description}</p>}
-                  <ul>
-                    {!item.keyPoints[0].title &&
-                      item.keyPoints.map((point, i) => (
-                        <li key={i} className="li">
-                          {point}
-                        </li>
-                      ))}
-                  </ul>
-                  <div>
-                    {item.keyPoints[0].title &&
-                      item.keyPoints.map((point, i) => (
-                        <div className="point" key={i}>
-                          <div className="title">{point.title}</div>
-                          <div className="description">{point.description}</div>
+                  {index === activeIndex && (
+                    <>
+                      <div
+                        id={item.id}
+                        style={{ position: "absolute", top: "-188" }}
+                      >
+                        {" "}
+                      </div>
+
+                      <div className='accordion-content'>
+                        <div className='acc-image'>
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className='accordion-image'
+                            style={{ height: "50%" }}
+                          />
                         </div>
-                      ))}
-                  </div>
+                        <h5 className='subtitle'>{item.subtitle} </h5>
+                        {item.description && <p>{item.description}</p>}
+                        <ul>
+                          {!item.keyPoints[0].title &&
+                            item.keyPoints.map((point, i) => (
+                              <li key={i} className='li'>
+                                {point}
+                              </li>
+                            ))}
+                        </ul>
+                        <div>
+                          {item.keyPoints[0].title &&
+                            item.keyPoints.map((point, i) => (
+                              <div className='point' key={i}>
+                                <div className='title'>{point.title}</div>
+                                <div className='description'>
+                                  {point.description}
+                                </div>
+                              </div>
+                            ))}
+                        </div>
+                      </div>
+                    </>
+                  )}
                 </div>
-              )}
-            </div>
+              </div>
+            </>
           ))}
       </div>
     </div>

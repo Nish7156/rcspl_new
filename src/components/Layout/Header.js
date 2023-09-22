@@ -29,70 +29,131 @@ function Header() {
   };
   return (
     <>
-      <header class="header-v2">
-        <div class="top-header">
-          <div class="container-fluid">
-            <ul class="contacts">
-              <li>
-                <i class="fa fa-phone"></i>98220 59460
-              </li>
-              <li>
-                <a href="mailto:info@rcspl.co.in">
-                  <i class="fa fa-envelope"></i>info@rcspl.co.in
-                </a>
-              </li>
-            </ul>
-
-            <ul class="socials">
-              <li>
-                <a href="#">
-                  <i class="fa fa-facebook-square"></i>
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  <i class="fa fa-instagram"></i>
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  <i class="fa fa-linkedin-square"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="bottom-header">
-          <div class="container-fluid">
-            <span class="mobile-navigation-toggle hidden-md hidden-lg">
-              <span class="menui top-menu"></span>
-              <span class="menui mid-menu"></span>
-              <span class="menui bottom-menu"></span>
-            </span>
-
-            <div class="logo">
-              <a href="index.html">
-                RCSPL<span>.</span>
-              </a>
-            </div>
-
-            <nav class="main-nav">
-              <ul class="menu">
-                {mainMenus.map((menuItem) => createMenuItem(menuItem))}
+       <header>
+          <div>
+            <div>
+              <ul>
+                <li><i>98220 59460</i></li>
+                <li>
+                  <a href="mailto:info@rcspl.co.in">
+                    <i>info@rcspl.co.in</i>
+                  </a>
+                </li>
               </ul>
-            </nav>
 
-            <ul class="actions">
-              <li>Your Cost-Saving Partner</li>
-            </ul>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </header>
+
+          <div>
+            <div>
+              <span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+
+              <div>
+                <a href="/"> RCSPL<span>.</span> </a>
+              </div>
+
+              <nav>
+                <div>
+                  <img src="./img/slider/cross-png-29390.png" />
+                </div>
+                <ul>
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <a data-scroll href="#about">About us</a>
+                  </li>
+                  <li>
+                    <a href="#service">Services</a>
+                    <ul>
+                      <li>
+                        <a href="#service_1"
+                          >Comprehensive Project Reports and Credit Facility
+                          Procurement</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#service_2">MIDC Plot Allotment</a>
+                      </li>
+                      <li>
+                        <a href="#service_3">MIDC Approvals Process</a>
+                      </li>
+                      <li>
+                        <a href="#service_4">Non-Agriculture (NA) Conversion</a>
+                      </li>
+                      <li>
+                        <a href="#service_5"
+                          >Integrated Logistic Parks (ILP) in Maharashtra</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#service_6"
+                          >Incentives for Developing Integrated Industrial
+                          Areas</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#service_7"
+                          >IT/ITES Parks and Data Centers in Maharashtra</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#service_8"
+                          >Securing Mega Status for Industrial and Manufacturing
+                          Projects in Maharashtra</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#service_9"
+                          >HOTEL & RESORTS APPROVALS & INCENTIVES</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#service_10"
+                          >Incentives and Subsidies under Various Government
+                          Policies</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/contact-us">Contact us</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <ul>
+                <li>Your Cost-Saving Partner</li>
+              </ul>
+            </div>
+          </div>
+        </header>
     </>
   );
 }
 
 export default Header;
+
