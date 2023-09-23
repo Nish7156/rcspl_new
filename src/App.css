@@ -110,6 +110,7 @@
   margin-bottom: 5px;
   border-radius: 5px;
   overflow: hidden; /* Hide overflow content */
+  padding: 12px;
 }
 
 /* Active accordion item */
@@ -162,4 +163,7 @@
 .description {
   font-size: 16px; /* Adjust the font size as needed */
   color: #666; /* Set the text color */
+}
+.fontFix{
+  font-family:"PT Sans, sans-serif" !important;
 }

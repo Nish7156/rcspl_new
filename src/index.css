@@ -11,6 +11,9 @@ header .main-nav ul li > ul {
   header .main-nav ul li > ul li {
     padding: 5px 20px !important;
   }
+  .acordianTitle {
+    font-size: 16px !important;
+  }
 }
 #cross {
   display: none;
