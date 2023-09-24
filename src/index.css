@@ -14,6 +14,9 @@ header .main-nav ul li > ul {
   .acordianTitle {
     font-size: 16px !important;
   }
+  .tp-leftarrow .tparrows .white-arrows{
+    left: -22px !important;
+  }
 }
 #cross {
   display: none;
@@ -135,4 +138,13 @@ header .main-nav ul li > ul {
       opacity: 1;
     }
   }
+}
+
+
+#sliderHead, #sliderSubHeading {
+  z-index: 2; /* Text elements should have a higher z-index */
+}
+
+.fade-in-image {
+  z-index: 1; /* Image elements or background should have a lower z-index */
 }
