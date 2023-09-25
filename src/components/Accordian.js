@@ -112,7 +112,7 @@ const Accordion = () => {
                     onClick={() => handleItemClick(index)}
                     style={{ borderRadius: "8px" }}
                   >
-                    <span>
+                    <span className="acordianTitle">
                       <FaCircle className='bullet-icon' /> {item.title}
                     </span>
                     {index === activeIndex ? (

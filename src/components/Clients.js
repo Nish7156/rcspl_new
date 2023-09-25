@@ -26,10 +26,18 @@ import client23 from "../lib/images/client/clients23.jpg";
 import client24 from "../lib/images/client/clients24.jpg";
 import client25 from "../lib/images/client/clients25.jpg";
 
+import Lubz from "../ClientsImages/lubz.jpeg";
+import sulaaa from "../ClientsImages/sulaaa.png";
+import sayadri from "../ClientsImages/sayadri.jpeg"
+
 const clientImages = [
-  client1,
-  client2,
-  client3,
+  // client1,
+  // client2,
+  // client3,
+  Lubz,
+  sulaaa,
+  sayadri,
+  Lubz,
   client4,
   client5,
   client6,
@@ -98,8 +106,8 @@ const Clients = () => {
 
         <Slider {...settings}>
           {clientImages.map((item, index) => (
-            <div className="slider-flex">
-              <img src={item} />
+            <div className="slider-flex" >
+              <img src={item} style={{height:"100px",width:"200px"}} />
             </div>
           ))}
         </Slider>
