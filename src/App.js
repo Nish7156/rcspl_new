@@ -1,9 +1,10 @@
 import "./App.css";
-import {useEffect} from "react"
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home";
 import ContactUs from "./components/ContactUs";
+import ServiceDetailsPage from "./components/serviceDetailsPage";
 
 function App() {
   const scrollToSection = (sectionId) => {
@@ -12,22 +13,21 @@ function App() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-  console.log(window.location.href);
 
   useEffect(() => {
-    console.log(window.location.hash, "hask");
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get("id");
-    console.log("urlParams", urlParams);
     if (id) {
       scrollToSection(id);
     }
-  },[window.location]);
+  }, []);
+
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='contact-us' element={<ContactUs />} />
+        <Route exact path='/' element={<Home />} />
+        <Route exact path='/contact-us' element={<ContactUs />} />
+        <Route exact path='/service/:slug' element={<ServiceDetailsPage />} />
       </Routes>
     </>
   );
