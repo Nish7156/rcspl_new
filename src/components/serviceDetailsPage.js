@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 function PageTitle({ title, backgroundImg }) {
   const titleStyle = {
@@ -27,7 +28,12 @@ function PageTitle({ title, backgroundImg }) {
 }
 
 function ServiceDetailsPage() {
-  const { slug } = useParams();
+  const location = useLocation();
+
+  const searchParams = new URLSearchParams(location.search);
+
+  // Get the value of the 'ref' query parameter
+  const refParam = searchParams.get("ref");
 
   const service = {
     title: "Public Policy Realization",
@@ -35,9 +41,9 @@ function ServiceDetailsPage() {
     image:
       "https://www.primuspartners.in/docs/images/page/74547_public-policy.jpeg", // Replace with your image path
   };
-  console.log("slug", slug);
+  console.log("refParam", refParam);
   return (
-    <div className='container'>
+    <div className='container pt-12'>
       <div className='row'>
         <div className='col-12'>
           <PageTitle title={service.title} backgroundImg={service.image} />

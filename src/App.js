@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/contact-us' element={<ContactUs />} />
-        <Route exact path='/service/:slug' element={<ServiceDetailsPage />} />
+        <Route exact path='/service' element={<ServiceDetailsPage />} />
       </Routes>
     </>
   );
