@@ -4,7 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 const Address = () => {
   return (
     <section className="container">
-      <div
+      {/* <div
         style={{
           fontSize: "14px",
           color: "#656b6f",
@@ -45,7 +45,16 @@ const Address = () => {
           technical, legal, financial, marketing, and operational aspects of
           proposed projects, ensuring feasibility and viability.
         </p>
-      </div>
+      </div> */}
+      <h2
+        style={{
+          textAlign: "center",
+          margin: "20px 0px",
+        }}
+        id="main-title"
+      >
+        Address
+      </h2>
       <div className="features-row">
         <div className="row">
           <div className="col-sm-4">

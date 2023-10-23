@@ -9,19 +9,20 @@ import Expirence from "./Expirence";
 import { useParams } from "react-router-dom";
 import Header from "./Header";
 import NewClients from "./NewClients";
+import NewServices from "./NewServices";
+import NewAbout from "./NewAbout";
 
 function Home() {
- 
   return (
     <>
       <WhyChooseUs />
       <Expirence />
-      <Accordion keyAreas={keyAreas} />
-      <section style={{ height: "88px" }} id='about'></section>
-      <Address />
+      <NewServices />
+      <section style={{ height: "88px" }} id="about"></section>
+      <NewAbout />
+      <NewClients />
       <TestiMonials />
-      {/* <Clients /> */}
-      <NewClients/>
+      <Address />
     </>
   );
 }
