@@ -1,30 +1,923 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <title>RCSPL</title>
+    <meta
+      name="description"
+      content="Your reliable partner in the world of manufacturing projects. With a rich history dating back to 2006, we have been consistently delivering excellence in a one-stop solution for manufacturing projects related services."
+    />
+    <meta name="author" content="RCSPL" />
+    <link rel="shortcut icon" href="MainLogo.png" type="image/x-icon" />
+
+    <!-- Mobile Specific Meta -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
 
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
+      type="text/css"
+      href="./css/font-awesome.min.css"
+      media="all"
     />
-
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
-    <title>RCSPL</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/bootstrap.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/screen.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./rs-plugin/css/settings.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./rs-plugin/css/layers.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="rs-plugin/css/navigation.css"
+    />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="page">
+      <div class="content-wrapper">
+        <header class="header-v2 fixed">
+          <div class="top-header">
+            <div class="container-fluid">
+              <ul class="contacts">
+                <li><i class="fa fa-phone"></i>98220 59460</li>
+                <li>
+                  <a href="mailto:info@rcspl.co.in">
+                    <i class="fa fa-envelope"></i>info@rcspl.co.in
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="socials">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="fa fa-linkedin-square"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bottom-header">
+            <div class="container-fluid">
+              <span class="mobile-navigation-toggle hidden-md hidden-lg">
+                <span class="menui top-menu"></span>
+                <span class="menui mid-menu"></span>
+                <span class="menui bottom-menu"></span>
+              </span>
+
+              <div class="logo">
+                <a href="/"> RCSPL<span>.</span> </a>
+              </div>
+
+              <nav class="main-nav" id="mobile-nav">
+                <div
+                  id="cross"
+                  style="
+                    color: black;
+                    top: 25px;
+                    left: 25px;
+                    position: absolute;
+                    height: 20px;
+                    width: 20px;
+                  "
+                >
+                  <img src="./img/slider/cross-png-29390.png" />
+                </div>
+                <ul class="menu">
+                  <li class="menu-item current-menu-parent">
+                    <a href="/">Home</a>
+                  </li>
+                  <li class="menu-item">
+                    <a data-scroll href="#about">About us</a>
+                  </li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="#service">Services</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item">
+                        <a href="service?ref=service_1"
+                          >Comprehensive Project Reports and Credit Facility
+                          Procurement</a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a href="service?ref=service_2">MIDC Plot Allotment</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="service?ref=service_3"
+                          >MIDC Approvals Process</a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a href="service?ref=service_4"
+                          >Non-Agriculture (NA) Conversion</a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a href="service?ref=service_5"
+                          >Integrated Logistic Parks (ILP) in Maharashtra</a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a href="service?ref=service_6"
+                          >Incentives for Developing Integrated Industrial
+                          Areas</a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a href="service?ref=service_7"
+                          >IT/ITES Parks and Data Centers in Maharashtra</a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a href="service?ref=service_8"
+                          >Securing Mega Status for Industrial and Manufacturing
+                          Projects in Maharashtra</a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a href="service?ref=service_9"
+                          >HOTEL & RESORTS APPROVALS & INCENTIVES</a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a href="service?ref=service_10"
+                          >Incentives and Subsidies under Various Government
+                          Policies</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="/contact-us">Contact us</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <ul class="actions">
+                <li>Your Cost-Saving Partner</li>
+              </ul>
+            </div>
+          </div>
+        </header>
+
+        <section style="top: -1px" class="hero-section" id="slider-section">
+          <h2 class="hidden">Slider Section</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="rev_slider_wrapper">
+                  <div
+                    class="fullscreen_slider rev_slider"
+                    style="position: relative"
+                  >
+                    <ul>
+                      <li data-transition="fade">
+                        <img
+                          src="img/slider/slider11.jpg"
+                          alt="slide1"
+                          data-bgfit="cover"
+                          data-bgposition="center center"
+                          data-kenburns="on"
+                          data-duration="7000"
+                          data-ease="Linear.easeNone"
+                          data-scalestart="110"
+                          data-scaleend="100"
+                          data-rotatestart="0"
+                          data-rotateend="0"
+                          data-offsetstart="0 0"
+                          data-offsetend="0 0"
+                          data-bgparallax="10"
+                          class="rev-slidebg"
+                          data-no-retina
+                        />
+
+                        <!-- <div
+                          class="fade-in-image"
+                          id="inPhone"
+                          style="
+                            padding: 24px;
+                            position: absolute;
+                            top: 20%;
+                            width: 100%;
+                          "
+                        >
+                          <h1
+                            style="
+                              font-size: 32px;
+                              text-align: center;
+                              color: white;
+                            "
+                          >
+                            Project Reports and Approvals
+                          </h1>
+                          <p
+                            style="
+                              font-size: 22px;
+                              color: white;
+                              text-align: center;
+                              line-height: 22px;
+                            "
+                          >
+                            Streamline your project management with efficient
+                            reporting and timely approvals.
+                          </p>
+                        </div> -->
+                        <div
+                          id="inPhone"
+                          class="tp-caption WhiteTtl tp-resizeme"
+                          data-x="center"
+                          data-hoffset="0"
+                          data-y="middle"
+                          data-voffset="0"
+                          data-whitespace="nowrap"
+                          data-transform_idle="o:1;"
+                          data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                          data-transform_out="opacity:0;s:500;s:500;"
+                          data-start="1300"
+                          data-responsive_offset="on"
+                        >
+                          Project Reports and Approvals
+                        </div>
+                        <div
+                          id="sliderHead"
+                          class="tp-caption WhiteTtl tp-resizeme"
+                          data-x="center"
+                          data-hoffset="0"
+                          data-y="middle"
+                          data-voffset="-50"
+                          data-whitespace="nowrap"
+                          data-transform_idle="o:1;"
+                          data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                          data-transform_out="opacity:0;s:500;s:500;"
+                          data-start="1300"
+                          data-responsive_offset="on"
+                        >
+                          Project Reports and Approvals
+                        </div>
+
+                        <div
+                          class="tp-caption WhiteTtlp tp-resizeme"
+                          data-x="center"
+                          data-hoffset="0"
+                          data-y="middle"
+                          data-voffset="30"
+                          data-transform_idle="o:1;"
+                          data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+                          data-transform_out="opacity:0;s:500;s:500;"
+                          data-start="1700"
+                          data-responsive_offset="on"
+                          id="sliderSubHeading"
+                        >
+                          Streamline your project management with efficient
+                          reporting and timely approvals.
+                        </div>
+                      </li>
+                      <li data-transition="fade">
+                        <img
+                          src="img/slider//slider-background-2.jpg"
+                          alt="slide1"
+                          data-bgfit="cover"
+                          data-bgposition="center center"
+                          data-kenburns="on"
+                          data-duration="7000"
+                          data-ease="Linear.easeNone"
+                          data-scalestart="110"
+                          data-scaleend="100"
+                          data-rotatestart="0"
+                          data-rotateend="0"
+                          data-offsetstart="0 0"
+                          data-offsetend="0 0"
+                          data-bgparallax="10"
+                          class="rev-slidebg"
+                          data-no-retina
+                        />
+                        <!-- <div
+                          id="inPhone"
+                          class="fade-in-image"
+                          style="
+                            padding: 24px;
+                            position: absolute;
+                            top: 20%;
+                            width: 100%;
+                          "
+                        >
+                          <h1
+                            style="
+                              font-size: 42px;
+                              text-align: center;
+                              color: white;
+                            "
+                          >
+                            Industrial Setup and Approvals
+                          </h1>
+                          <p
+                            style="
+                              font-size: 22px;
+                              color: white;
+                              text-align: center;
+                              line-height: 22px;
+                            "
+                          >
+                            Your pathway to establishing a successful industrial
+                            venture with seamless regulatory approvals.
+                          </p>
+                        </div> -->
+                        <div
+                          id="inPhone"
+                          class="tp-caption WhiteTtl tp-resizeme"
+                          data-x="center"
+                          data-hoffset="0"
+                          data-y="middle"
+                          data-voffset="0"
+                          data-whitespace="nowrap"
+                          data-transform_idle="o:1;"
+                          data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                          data-transform_out="opacity:0;s:500;s:500;"
+                          data-start="1300"
+                          data-responsive_offset="on"
+                        >
+                          Industrial Setup and Approvals
+                        </div>
+                        <div
+                          id="sliderHead"
+                          class="tp-caption WhiteTtl tp-resizeme"
+                          data-x="center"
+                          data-hoffset="0"
+                          data-y="middle"
+                          data-voffset="-50"
+                          data-whitespace="nowrap"
+                          data-transform_idle="o:1;"
+                          data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                          data-transform_out="opacity:0;s:500;s:500;"
+                          data-start="1300"
+                          data-responsive_offset="on"
+                        >
+                          Industrial Setup and Approvals
+                        </div>
+
+                        <div
+                          class="tp-caption WhiteTtlp tp-resizeme"
+                          data-x="center"
+                          data-hoffset="0"
+                          data-y="middle"
+                          data-voffset="30"
+                          data-transform_idle="o:1;"
+                          data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+                          data-transform_out="opacity:0;s:500;s:500;"
+                          data-start="1700"
+                          data-responsive_offset="on"
+                          id="sliderSubHeading"
+                        >
+                          Your pathway to establishing a successful industrial
+                          venture with seamless regulatory approvals.
+                        </div>
+                      </li>
+                      <li data-transition="fade">
+                        <img
+                          src="img/slider/slider8.jpg"
+                          alt="slide1"
+                          data-bgfit="cover"
+                          data-bgposition="center center"
+                          data-kenburns="on"
+                          data-duration="7000"
+                          data-ease="Linear.easeNone"
+                          data-scalestart="110"
+                          data-scaleend="100"
+                          data-rotatestart="0"
+                          data-rotateend="0"
+                          data-offsetstart="0 0"
+                          data-offsetend="0 0"
+                          data-bgparallax="10"
+                          class="rev-slidebg"
+                          data-no-retina
+                          style="opacity: 100px"
+                        />
+                        <!-- <div
+                          id="inPhone"
+                          class="fade-in-image"
+                          style="
+                            padding: 24px;
+                            position: absolute;
+                            top: 20%;
+                            width: 100%;
+                          "
+                        >
+                          <h1
+                            style="
+                              font-size: 42px;
+                              text-align: center;
+                              color: white;
+                            "
+                          >
+                            Hospitality and Food Industry
+                          </h1>
+                          <p
+                            style="
+                              font-size: 22px;
+                              color: white;
+                              text-align: center;
+                              line-height: 22px;
+                            "
+                          >
+                            Savor the flavors of success in the world of
+                            hospitality and food, and culinary delights meet.
+                          </p>
+                        </div> -->
+                        <div
+                          class="tp-caption WhiteTtl tp-resizeme"
+                          data-x="center"
+                          data-hoffset="0"
+                          data-y="middle"
+                          data-voffset="0"
+                          data-whitespace="nowrap"
+                          data-transform_idle="o:1;"
+                          data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                          data-transform_out="opacity:0;s:500;s:500;"
+                          data-start="1300"
+                          data-responsive_offset="on"
+                          id="inPhone"
+                        >
+                          Hospitality and Food Industry
+                        </div>
+                        <div
+                          class="tp-caption WhiteTtl tp-resizeme"
+                          data-x="center"
+                          data-hoffset="0"
+                          data-y="middle"
+                          data-voffset="-50"
+                          data-whitespace="nowrap"
+                          data-transform_idle="o:1;"
+                          data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                          data-transform_out="opacity:0;s:500;s:500;"
+                          data-start="1300"
+                          data-responsive_offset="on"
+                          id="sliderHead"
+                        >
+                          Hospitality and Food Industry
+                        </div>
+
+                        <div
+                          style="text-align: center"
+                          class="tp-caption WhiteTtlp tp-resizeme"
+                          data-x="center"
+                          data-hoffset="0"
+                          data-y="middle"
+                          data-voffset="30"
+                          data-transform_idle="o:1;"
+                          data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+                          data-transform_out="opacity:0;s:500;s:500;"
+                          data-start="1700"
+                          data-responsive_offset="on"
+                          id="sliderSubHeading"
+                        >
+                          Savor the flavors of success in the world of
+                          hospitality and food, and culinary delights meet.
+                        </div>
+                      </li>
+                    </ul>
+
+                    <span class="scroll">
+                      <i class="icon-Down"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="hero-section" id="contactSection">
+          <h2 class="hidden">Slider Section</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div
+                  class="forcefullwidth_wrapper_tp_banner"
+                  style="
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                  "
+                >
+                  <div
+                    class="rev_slider_wrapper"
+                    style="
+                      margin-top: 0px;
+                      margin-bottom: 0px;
+                      position: absolute;
+                      overflow: visible;
+                      height: 563px;
+                      width: 1440px;
+                      left: -135px;
+                    "
+                  >
+                    <div
+                      class="fullwidth_slider rev_slider revslider-initialised tp-simpleresponsive"
+                      data-arrows="false"
+                      data-height="750"
+                      id="revslider-792"
+                      style="
+                        max-height: 750px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        height: 563px;
+                      "
+                    >
+                      <ul
+                        class="tp-revslider-mainul"
+                        style="
+                          visibility: visible;
+                          display: block;
+                          overflow: hidden;
+                          width: 100%;
+                          height: 100%;
+                          max-height: none;
+                        "
+                      >
+                        <li
+                          data-transition="fade"
+                          class="tp-revslider-slidesli active-revslide"
+                          style="
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+                            z-index: 20;
+                            visibility: inherit;
+                            opacity: 1;
+                            background-color: rgba(255, 255, 255, 0);
+                          "
+                        >
+                          <div
+                            class="slotholder"
+                            style="
+                              width: 100%;
+                              height: 100%;
+                              visibility: inherit;
+                              opacity: 1;
+                              transform: matrix(1, 0, 0, 1, 0, 0);
+                            "
+                          >
+                            <div
+                              class="tp-bgimg defaultimg"
+                              style="
+                                background-color: rgba(0, 0, 0, 0);
+                                background-repeat: no-repeat;
+                                background-image: url('img/contact-page-bg.jpg');
+                                background-size: cover;
+                                background-position: center center;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 1;
+                                visibility: inherit;
+                                z-index: 20;
+                              "
+                              src="img/contact-page-bg.jpg"
+                            ></div>
+                            <div
+                              class="tp-kbimg-wrap"
+                              style="
+                                z-index: 2;
+                                width: 100%;
+                                height: 100%;
+                                top: 0px;
+                                left: 0px;
+                                position: absolute;
+                                transform: translate3d(-0.64px, 0px, 0px);
+                                transform-origin: 0% 0% 0px;
+                              "
+                            >
+                              <img
+                                class="tp-kbimg"
+                                src="img/slider/contact-page-bg.jpg"
+                                style="
+                                  position: absolute;
+                                  height: 563px;
+                                  width: 1441px;
+                                  transform: translate3d(0px, 0px, 0px);
+                                  transform-origin: 0% 0% 0px;
+                                "
+                                width="1920"
+                                height="750"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="tp-parallax-wrap"
+                            style="
+                              position: absolute;
+                              visibility: visible;
+                              left: 479px;
+                              top: 225px;
+                              z-index: 1;
+                            "
+                          >
+                            <div
+                              class="tp-loop-wrap"
+                              style="position: absolute"
+                            >
+                              <div
+                                class="tp-mask-wrap"
+                                style="
+                                  position: absolute;
+                                  overflow: visible;
+                                  height: auto;
+                                  width: auto;
+                                "
+                              >
+                                <div
+                                  class="tp-caption WhiteTtl tp-resizeme"
+                                  data-x="center"
+                                  data-hoffset="0"
+                                  data-y="middle"
+                                  data-voffset="-40"
+                                  data-whitespace="nowrap"
+                                  data-transform_idle="o:1;"
+                                  data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                                  data-transform_out="opacity:0;s:500;s:500;"
+                                  data-start="1300"
+                                  data-responsive_offset="on"
+                                  style="
+                                    visibility: inherit;
+                                    transition: none 0s ease 0s;
+                                    line-height: 53px;
+                                    border-width: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    letter-spacing: 3px;
+                                    font-weight: 400;
+                                    font-size: 38px;
+                                    white-space: nowrap;
+                                    min-height: 0px;
+                                    min-width: 0px;
+                                    max-height: none;
+                                    max-width: none;
+                                    opacity: 1;
+                                    transform: matrix3d(
+                                      1,
+                                      0,
+                                      0,
+                                      0,
+                                      0,
+                                      1,
+                                      0,
+                                      0,
+                                      0,
+                                      0,
+                                      1,
+                                      0,
+                                      0,
+                                      0,
+                                      0,
+                                      1
+                                    );
+                                    transform-origin: 50% 50% 0px;
+                                  "
+                                >
+                                  Get in touch with us
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="tp-parallax-wrap"
+                            style="
+                              position: absolute;
+                              visibility: visible;
+                              left: 445px;
+                              top: 284px;
+                              z-index: 1;
+                            "
+                          >
+                            <div class="tp-loop-wrap">
+                              <p style="color: white">
+                                Have a project you’re interested in discussing
+                                with us?, Drop us a line below, we’d love to
+                                talk
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="tp-loader spinner0" style="display: none">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                      </div>
+                      <div
+                        class="tp-bannertimer"
+                        style="visibility: hidden; width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="tp-fullwidth-forcer"
+                    style="width: 100%; height: 563px"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="root"></div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/nouislider.js"></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/jquery.themepunch.tools.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/jquery.themepunch.revolution.min.js"
+    ></script>
+    <!-- rs-plugin extensions -->
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.video.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.actions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.migration.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"
+    ></script>
+    <!-- //rs-plugin extensions -->
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.magnific-popup.min.js"
+    ></script>
+    <script type="text/javascript" src="js/isotope.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Function to scroll the screen down by 20%
+        function scrollDownBy20Percent() {
+          const currentScrollPosition = $(window).scrollTop();
+          const windowHeight = $(window).height();
+          const scrollAmount = currentScrollPosition + windowHeight * 0.9; // 20% of window height
+
+          $("html, body").animate(
+            {
+              scrollTop: scrollAmount,
+            },
+            500 // Adjust the scrolling duration as needed
+          );
+        }
+
+        // Add a click event listener to elements with the "scroll-trigger" class
+        $(".scroll").click(function () {
+          scrollDownBy20Percent();
+        });
+      });
+      // Function to hide the slider section if the URL contains "/contact-us"
+      function hideSliderSection() {
+        if (window.location.href.indexOf("/contact-us") !== -1) {
+          $("#slider-section").hide();
+          $("#contactSection").show();
+        } else {
+          $("#slider-section").show();
+          $("#contactSection").hide();
+        }
+        if (window.location.href.indexOf("#about") !== -1) {
+          $("#mobile-nav").removeClass("visible");
+        }
+      }
+      function hidecontactSection() {
+        if (window.location.href.match(/\/service\?ref=[a-zA-Z0-9_-]+/)) {
+          $("#slider-section").hide();
+          $("#contactSection").hide();
+        }
+        if (window.location.href.indexOf("#about") !== -1) {
+          $("#mobile-nav").removeClass("visible");
+        }
+      }
+      $(document).ready(function () {
+        hideSliderSection(); // Check on initial page load
+        hidecontactSection(); // Check on initial page load
+        $(window).on("popstate", hideSliderSection); // Check whenever the URL changes
+        $(window).on("popstate", hidecontactSection); // Check whenever the URL changes
+      });
+      // JavaScript/jQuery
+      $(document).ready(function () {
+        // Function to add the 'visible' class to the mobile navigation menu
+        function showMobileMenu() {
+          $("#mobile-nav").addClass("visible");
+        }
+
+        // Function to remove the 'visible' class from the mobile navigation menu
+        function hideMobileMenu() {
+          $("#mobile-nav").removeClass("visible");
+        }
+
+        // Add a click event listener to the cross element
+        $("#cross").click(function () {
+          hideMobileMenu();
+          console.log("clickcross");
+        });
+
+        // Add a click event listener to the mobile navigation button
+        $(".mobile-navigation-toggle").click(function () {
+          showMobileMenu(); // Add the 'visible' class when the button is clicked
+        });
+        $("#mobile-nav .sub-menu .menu-item a").click(function () {
+          hideMobileMenu();
+        });
+      });
+
+      // JavaScript/jQuery
+    </script>
+    <script>
+      document
+        .querySelector('a[href="#topContent"]')
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+
+          var topContentElement = document.getElementById("topContent");
+
+          if (topContentElement) {
+            // Calculate the target scroll position (20% from the top of the viewport)
+            var viewportHeight = window.innerHeight;
+            var targetScrollPosition =
+              topContentElement.offsetTop - 0.1 * viewportHeight - 500;
+
+            // Scroll to the target position smoothly
+            window.scrollTo({
+              top: targetScrollPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   </body>
 </html>

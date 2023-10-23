@@ -1,0 +1,169 @@
+*, html {
+
+  scroll-behavior: smooth !important;
+  scroll-snap-align: start;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Accordion container */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+/* Accordion item title */
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  background:#2a2f35; 
+  color: white; 
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  border-bottom: 1px solid #ddd;
+  font-size:large;
+}
+
+
+
+
+/* Arrow icon */
+.accordion-title .arrow-icon {
+  transition: transform 0.2s ease;
+}
+
+.acc-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Add some top margin for spacing */
+}
+
+/* Image styles */
+.accordion-image {
+  width: 50%;
+  margin: 12px;
+  height: auto; /* Maintain the image's aspect ratio */
+  border-radius: 5px; /* Add rounded corners to the image */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for elevation */
+}
+
+.bullet-icon {
+  color: #FFA500; /* Use the desired light orange color */
+  font-size: 12px; /* Adjust the font size as needed */
+  margin-right: 8px; /* Add some spacing between the icon and text */
+}
+
+/* Active arrow icon rotation */
+.accordion-item.active .accordion-title .arrow-icon {
+  transform: rotate(180deg);
+}
+
+
+.service-header{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* Accordion item */
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  overflow: hidden; /* Hide overflow content */
+  padding: 12px;
+}
+
+/* Active accordion item */
+.accordion-item.active {
+  border: 1px solid #ccc; /* Customize the active item's border color */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow to the active item for elevation */
+}
+
+/* Accordion item content */
+.accordion-content {
+  padding: 15px 20px;
+  display: block;
+  overflow: hidden;
+  max-height: min-content;
+  transition: max-height 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .accordion-content{
+    padding: 4px 0px !important;
+  }
+  .accordion {
+    padding: 0px !important;
+  }
+}
+.subtitle{
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+}
+.li{
+  margin: 16px 8px;
+}
+/* Active accordion item content */
+.accordion-item.active .accordion-content {
+  max-height: min-content;
+}
+
+
+.point {
+  margin-bottom: 20px; /* Add some spacing between each point */
+}
+
+.title {
+  font-weight: bold; /* Make the title bold */
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #333; /* Set the text color */
+}
+
+.description {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #666; /* Set the text color */
+}
+.fontFix{
+  font-family:"PT Sans, sans-serif" !important;
+}
