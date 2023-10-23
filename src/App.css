@@ -167,3 +167,15 @@
 .fontFix{
   font-family:"PT Sans, sans-serif" !important;
 }
+.aboutCards{
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .aboutCards{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}
