@@ -5,19 +5,10 @@ import Iimage2 from "../lib/images/head2.jpg";
 import { useNavigate } from "react-router-dom";
 
 function Expirence() {
-  const navigate = useNavigate();
-
-  const handleNavigation = () => {
-    // Construct the URL with the 'ref' query parameter
-    const url = `service?ref=abc`;
-
-    // Navigate to the new URL
-    navigate(url);
-  };
   return (
     <>
       <section class='about-us-section'>
-        <div class='container' onClick={handleNavigation()}>
+        <div class='container'>
           <div class='section-header'>
             <h2 id='main-title'>Realm Consulting Services Private Limited</h2>
             <span>
