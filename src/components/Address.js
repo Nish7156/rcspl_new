@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Address = () => {
   return (
-    <section className="container">
+    <section className='container'>
       {/* <div
         style={{
           fontSize: "14px",
@@ -49,47 +49,47 @@ const Address = () => {
       <h2
         style={{
           textAlign: "center",
-          margin: "20px 0px",
+          margin: "40px 0px",
         }}
-        id="main-title"
+        // id="main-title"
       >
         Address
       </h2>
-      <div className="features-row">
-        <div className="row">
-          <div className="col-sm-4">
-            <div className="feature-box">
-              <i className="icon">
+      <div className='features-row'>
+        <div className='row'>
+          <div className='col-sm-4'>
+            <div className='feature-box'>
+              <i className='icon'>
                 <FaMapMarkerAlt />
               </i>
-              <h5 className="title">NASHIK</h5>
-              <p className="description">
+              <h5 className='title'>NASHIK</h5>
+              <p className='description'>
                 1, Niwas Blossom, Sharanpur, Trimbak Link Road, Canada Corner,
                 Nashik - 422005 Maharashtra.
               </p>
               <h6>Call US ON: +91 253 2317160</h6>
             </div>
           </div>
-          <div className="col-sm-4">
-            <div className="feature-box">
-              <i className="icon">
+          <div className='col-sm-4'>
+            <div className='feature-box'>
+              <i className='icon'>
                 <FaMapMarkerAlt />
               </i>
-              <h5 className="title">THANE</h5>
-              <p className="description">
+              <h5 className='title'>THANE</h5>
+              <p className='description'>
                 2, Chandranil, Gawand Path, Behind State Bank Colony, Next to
                 Gurudwara, Naupada, Thane - 400602
               </p>
               <h6>Call US ON: +91 9130091205</h6>
             </div>
           </div>
-          <div className="col-sm-4">
-            <div className="feature-box">
-              <i className="icon">
+          <div className='col-sm-4'>
+            <div className='feature-box'>
+              <i className='icon'>
                 <FaMapMarkerAlt />
               </i>
-              <h5 className="title">AURANGABAD</h5>
-              <p className="description">
+              <h5 className='title'>AURANGABAD</h5>
+              <p className='description'>
                 ‘Saket’, 115, Mahatma Gandhi Nagar, Behind Fire Brigade, Station
                 Road, Aurangabad – 431005.
               </p>

@@ -4,10 +4,10 @@ import keyAreas from "../lib/KeyAreas";
 function NewServices() {
   return (
     <>
-      <section className="features-section">
-        <div className="container">
+      <section className='features-section'>
+        <div className='container'>
           <h1>Services</h1>
-          <div className="row">
+          <div className='row'>
             {keyAreas &&
               keyAreas.map((data) => {
                 const truncatedDescription =
@@ -17,8 +17,8 @@ function NewServices() {
 
                 return (
                   <a href={`service?ref=${data.id}`} key={data.id}>
-                    <div className="col-sm-4" style={{ cursor: "pointer" }}>
-                      <div className="feature-md">
+                    <div className='col-sm-4' style={{ cursor: "pointer" }}>
+                      <div className='feature-md'>
                         <img src={data.image} alt={data.title} />
                         <h5>{data.title}</h5>
                         <p>{truncatedDescription}</p>
